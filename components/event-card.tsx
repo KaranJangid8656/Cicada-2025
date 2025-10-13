@@ -12,7 +12,7 @@ export function EventCard({ event }: { event: Event }) {
           <img
             src={event.clubLogo || `/placeholder.svg?height=32&width=32&query=club%20logo`}
             alt={`${event.clubName} logo`}
-            className="h-8 w-8 rounded-sm"
+            className={`${event.clubName.toLowerCase().includes('llm') ? 'h-8 w-20' : 'h-8 w-8 rounded-sm'}`}
           />
           <div className="px-3 py-1.5 bg-gradient-to-r from-accent/20 to-accent/10 text-accent-foreground rounded-full text-xs font-medium backdrop-blur-sm">
             {event.clubName}

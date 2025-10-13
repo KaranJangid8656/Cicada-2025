@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Instagram, Mail, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -43,17 +44,46 @@ export function Footer() {
         <div className="text-sm">
           <h3 className="font-medium mb-3">Contact</h3>
           <ul className="space-y-2 text-muted-foreground">
-            <li>Email: cicada@ait.edu</li>
-            <li>Address: Atria Institute of Technology , Hebbal, Bengaluru</li>
+            <li>
+              <a
+                href="https://www.instagram.com/cicada_atria?igsh=dmp0Ym1hM3dneXc3"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <Instagram className="h-4 w-4" />
+                @cicada_atria
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <a
+                href="mailto:cicada@ait.edu"
+                className="hover:text-primary transition-colors"
+              >
+                cicada@ait.edu
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://maps.google.com/maps?q=Atria+Institute+of+Technology+Hebbal+Bengaluru"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <MapPin className="h-4 w-4" />
+                Atria Institute of Technology, Bengaluru
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-6 text-xs text-muted-foreground flex items-center justify-between">
-          <p>© 2025 CICADA Festival</p>
+          <p>©  CICADA 2025 </p>
           <a href="https://vercel.com" className="hover:text-primary" target="_blank" rel="noreferrer noopener">
-            Powered by Vercel
+            Atria Institute of Technology
           </a>
         </div>
       </div>

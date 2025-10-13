@@ -106,9 +106,9 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
           <div className="md:col-span-3 p-6 flex flex-col items-start justify-start md:border-l border-border bg-background">
             <div className="flex items-center gap-3 mb-2">
               <img
-                src={event.clubLogo || `/placeholder.svg?height=32&width=32&query=club%20logo`}
+                src={event.clubLogo || `/placeholder.svg?height=32&width=40&query=club%20logo`}
                 alt={`${event.clubName} logo`}
-                className="h-8 w-8 rounded-sm"
+                className="h-8 w-10 rounded-sm"
               />
               <span className="text-base font-semibold text-foreground">{event.clubName}</span>
             </div>

@@ -20,8 +20,8 @@ export default function HomePage() {
 
       <section id="about" className="mx-auto max-w-7xl px-4 md:px-6 mt-16">
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground neon-ring">
-            <h3 className="text-xl md:text-2xl font-semibold">About CICADA</h3>
+          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
+            <h3 className="text-xl md:text-2xl font-semibold text-green-400">About CICADA</h3>
             <p className="mt-3 text-sm md:text-base text-muted-foreground">
               CICADA 2025 is AIT’s flagship tech fest—one week of hands‑on workshops, competitions, talks, and creative
               showcases led by student clubs. It’s where ideas turn into prototypes and teams into communities.

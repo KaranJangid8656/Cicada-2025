@@ -6,21 +6,21 @@ export default function AboutPage() {
     <main>
       <Navbar />
       <section className="mx-auto max-w-7xl px-4 md:px-6 pt-10">
-        <h1 className="text-3xl md:text-4xl font-bold">About CICADA</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-green-400">About CICADA</h1>
         <p className="mt-3 text-muted-foreground prose-narrow">
           CICADA is the annual technology festival of Atria Institute of Technology. It unites student clubs to host
           workshops, hackathons, competitions, and talks that champion learning by building.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground neon-ring">
+          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
             <h2 className="text-xl font-semibold">Mission</h2>
             <p className="mt-2 text-sm text-muted-foreground">
               Empower students to explore, prototype, and ship ideas together—bridging disciplines and experience
               levels.
             </p>
           </div>
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground neon-ring">
+          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
             <h2 className="text-xl font-semibold">Highlights</h2>
             <ul className="mt-2 text-sm text-muted-foreground space-y-1">
               <li>• 30+ events across AI, Robotics, Cybersecurity, Design, Dev</li>
@@ -28,7 +28,7 @@ export default function AboutPage() {
               <li>• Open to beginners and advanced builders</li>
             </ul>
           </div>
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground neon-ring">
+          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
             <h2 className="text-xl font-semibold">Contact</h2>
             <p className="mt-2 text-sm text-muted-foreground">cicada@ait.edu • AIT Campus, Bengaluru</p>
           </div>
