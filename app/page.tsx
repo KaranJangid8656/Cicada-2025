@@ -1,10 +1,34 @@
+'use client'
+
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Hero } from "@/components/hero"
 import { events } from "@/data/events"
 import { EventCard } from "@/components/event-card"
+import { useEffect, useRef } from 'react'
 
 export default function HomePage() {
+  const sponsorRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const sponsorDiv = sponsorRef.current
+    if (sponsorDiv) {
+      let position = 0
+      const speed = 2 // Faster speed
+      const animate = () => {
+        position -= speed
+        sponsorDiv.style.transform = `translateX(${position}px)`
+        // Reset when scrolled past approximately one set (adjust based on content width)
+        const setWidth = 800 // Approximate width for one set (5 images + gaps)
+        if (Math.abs(position) >= setWidth) {
+          position = 0
+        }
+        requestAnimationFrame(animate)
+      }
+      animate()
+    }
+  }, [])
+
   return (
     <main>
       <Navbar />
@@ -18,62 +42,201 @@ export default function HomePage() {
         </div>
       </section>
 
+      
+
       <section className="mx-auto max-w-7xl px-4 md:px-6 mt-16">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Our Sponsors</h2>
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll-left gap-16 items-center">
-            {/* First set of sponsors */}
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349702/PhonePe-Logo_xmkakf.png"
-              alt="PhonePe"
-              className="flex-shrink-0 w-60 h-30 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
-              alt="Decathlon"
-              className="flex-shrink-0 w-80 h-40 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-              alt="Domino's"
-              className="flex-shrink-0 w-80 h-40 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
-              alt="Intel"
-              className="flex-shrink-0 w-32 h-16 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-              alt="Red Bull"
-              className="flex-shrink-0 w-60 h-30 object-contain"
-            />
-            {/* Duplicate set for seamless scrolling */}
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349702/PhonePe-Logo_xmkakf.png"
-              alt="PhonePe"
-              className="flex-shrink-0 w-70 h-35 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
-              alt="Decathlon"
-              className="flex-shrink-0 w-80 h-40 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-              alt="Domino's"
-              className="flex-shrink-0 w-80 h-40 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
-              alt="Intel"
-              className="flex-shrink-0 w-32 h-16 object-contain"
-            />
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-              alt="Red Bull"
-              className="flex-shrink-0 w-60 h-30 object-contain"
-            />
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Our Proud Sponsors</h2>
+        <div className="relative overflow-hidden py-8">
+          <div className="flex gap-16 items-center animate-scroll-left">
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760349506/fb67bb77f961c74e2221baf104b4379d-removebg-preview_tkhugi.png"
+                alt="PhonePe"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348839/Decathlon_Group-Logo.wine_vjwxpi.png"
+                alt="Decathlon"
+                className="w-80 h-40 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
+                alt="Domino's"
+                className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348420/intel-logo-new_cty5ay.png"
+                alt="Intel"
+                className="w-32 h-16 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
