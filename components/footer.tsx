@@ -82,8 +82,8 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-6 text-xs text-muted-foreground flex items-center justify-between">
           <p>©  CICADA 2025 </p>
-          <a href="https://vercel.com" className="hover:text-primary" target="_blank" rel="noreferrer noopener">
-            Atria Institute of Technology
+          <a href="https://script-verse-mu.vercel.app/" className="hover:text-primary" target="_blank" rel="noreferrer noopener">
+            ScriptVerse
           </a>
         </div>
       </div>

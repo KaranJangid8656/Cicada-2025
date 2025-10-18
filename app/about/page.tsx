@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { ParticleNetwork } from "@/components/particle-network"
 
 export default function AboutPage() {
   return (
@@ -12,25 +13,34 @@ export default function AboutPage() {
           workshops, hackathons, competitions, and talks that champion learning by building.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
-            <h2 className="text-xl font-semibold">Mission</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Empower students to explore, prototype, and ship ideas together—bridging disciplines and experience
-              levels.
-            </p>
+        <div className="mt-8 grid gap-6 md:grid-cols-2 relative">
+          <div className="space-y-6">
+            <div className="rounded-xl p-5 bg-accent text-accent-foreground">
+              <h2 className="text-xl font-semibold">Mission</h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Empower students to explore, prototype, and ship ideas together—bridging disciplines and experience
+                levels.
+              </p>
+            </div>
+            <div className="rounded-xl p-5 bg-accent text-accent-foreground">
+              <h2 className="text-xl font-semibold">Vision</h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Foster a collaborative tech ecosystem where innovation thrives, ideas transform into solutions, and students gain real-world experience.
+              </p>
+            </div>
+            <div className="rounded-xl p-5 bg-accent text-accent-foreground">
+              <h2 className="text-xl font-semibold">Community</h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Build meaningful connections, network with mentors, and collaborate with peers passionate about technology and problem-solving.
+              </p>
+            </div>
           </div>
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
-            <h2 className="text-xl font-semibold">Highlights</h2>
-            <ul className="mt-2 text-sm text-muted-foreground space-y-1">
-              <li>• 30+ events across AI, Robotics, Cybersecurity, Design, Dev</li>
-              <li>• Mentorship, prize tracks, and showcases</li>
-              <li>• Open to beginners and advanced builders</li>
-            </ul>
-          </div>
-          <div className="rounded-xl p-6 bg-accent text-accent-foreground">
-            <h2 className="text-xl font-semibold">Contact</h2>
-            <p className="mt-2 text-sm text-muted-foreground">cicada@ait.edu • AIT Campus, Bengaluru</p>
+          <div className="hidden md:flex justify-center items-center -mt-10 ml-24">
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760198155/cicada_logo_no_bg_m0sjov.png"
+              alt="CICADA 2025 Logo"
+              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain opacity-90"
+            />
           </div>
         </div>
 

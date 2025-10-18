@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 const links = [
   { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
+  { href: "/Cicada-Brochure.pdf", label: "Brochure" },
   { href: "/about", label: "About" },
 ]
 
@@ -25,7 +26,7 @@ export function Navbar() {
           />
           <span className="font-semibold tracking-wide">  CICADA 2025</span>
         </Link>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -47,7 +48,7 @@ export function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-64">
-              <nav className="mt-8 grid gap-3">
+              <nav className="mt-8 grid gap-4">
                 {links.map((l) => (
                   <SheetClose asChild key={l.href}>
                     <Link
