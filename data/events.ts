@@ -25,9 +25,9 @@ export const events: Event[] = [
     clubLogo: "/ait-ai-club-logo.jpg",
     date: "Nov 6-7, 2025",
     Duration: "24 Hours",
-    teamSize: "4 - 5 members",
+    teamSize: "3 - 4 members",
     venue: "Atria Institute of Technology",
-    registrationFee: "₹ 750 per team",
+    registrationFee: "₹ 800 per team",
     mode: "Offline",
     registerUrl: "#", // replace later with Google Form
   },

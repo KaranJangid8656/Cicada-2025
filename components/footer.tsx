@@ -22,7 +22,12 @@ export function Footer() {
 
         <nav className="text-sm">
           <h3 className="font-medium mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-muted-foreground">
+          <ul className="grid grid-cols-2 gap-2 text-muted-foreground">
+            <li>
+              <Link href="/terms" className="hover:text-primary">
+                Terms & Conditions
+              </Link>
+            </li>
             <li>
               <Link href="/events" className="hover:text-primary">
                 Events
