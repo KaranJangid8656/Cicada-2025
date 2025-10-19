@@ -14,7 +14,7 @@ export default function HomePage() {
     const sponsorDiv = sponsorRef.current
     if (sponsorDiv) {
       let position = 0
-      const speed = 1 // Slower speed for smoothness
+      const speed = window.innerWidth < 768 ? 6 : 4 // Faster on mobile, standard on desktop
       const animate = () => {
         position -= speed
         sponsorDiv.style.transform = `translateX(${position}px)`
