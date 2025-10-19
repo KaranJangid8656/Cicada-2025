@@ -29,7 +29,7 @@ export const events: Event[] = [
     venue: "Atria Institute of Technology",
     registrationFee: "₹ 800 per team",
     mode: "Offline",
-    registerUrl: "#", // replace later with Google Form
+    registerUrl: "https://konfhub.com/cicada-2025", // replace later with Google Form
   },
   {
     slug: "ipl-auction",
@@ -44,7 +44,7 @@ export const events: Event[] = [
     venue: "Atria Institute of Technology",
     registrationFee: "₹ 150 per team",
     mode: "Offline",
-    registerUrl: "#",
+    registerUrl: "https://konfhub.com/cicada-2025",
   },
   {
     slug: "intruverse-ctf",
@@ -59,7 +59,7 @@ export const events: Event[] = [
     venue: "Atria Institute of Technology",
     registrationFee: "₹150 per team",
     mode: "Offline",
-    registerUrl: "#",
+    registerUrl: "https://konfhub.com/cicada-2025",
   },
   {
     slug: "llm-odyssey",
@@ -74,7 +74,7 @@ export const events: Event[] = [
     venue: "Atria Institute of Technology",
     registrationFee: "₹100 per team",
     mode: "Offline",
-    registerUrl: "#",
+    registerUrl: "https://konfhub.com/cicada-2025",
   },
   {
     slug: "proto-race",
@@ -89,6 +89,6 @@ export const events: Event[] = [
     venue: "Atria Institute of Technology",
     registrationFee: "₹160 per team",
     mode: "Offline",
-    registerUrl: "#",
+    registerUrl: "https://konfhub.com/cicada-2025",
   },
 ]

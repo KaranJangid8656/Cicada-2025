@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Mail, MapPin } from "lucide-react"
+import { Instagram, Mail, MapPin, Phone } from "lucide-react"
 
 export function Footer() {
   return (
@@ -48,27 +48,32 @@ export function Footer() {
 
         <div className="text-sm">
           <h3 className="font-medium mb-3">Contact</h3>
+          <div className="flex gap-4 text-muted-foreground mb-2">
+            <a
+              href="https://www.instagram.com/cicada_atria?igsh=dmp0Ym1hM3dneXc3"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
+              href="mailto:cicada@ait.edu"
+              className="hover:text-primary transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+            <a
+              href="tel:+919986837400"
+              className="hover:text-primary transition-colors"
+              aria-label="Phone"
+            >
+              <Phone className="h-5 w-5" />
+            </a>
+          </div>
           <ul className="space-y-2 text-muted-foreground">
-            <li>
-              <a
-                href="https://www.instagram.com/cicada_atria?igsh=dmp0Ym1hM3dneXc3"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <Instagram className="h-4 w-4" />
-                @cicada_atria
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <a
-                href="mailto:cicada@ait.edu"
-                className="hover:text-primary transition-colors"
-              >
-                cicada@ait.edu
-              </a>
-            </li>
             <li>
               <a
                 href="https://maps.google.com/maps?q=Atria+Institute+of+Technology+Hebbal+Bengaluru"
