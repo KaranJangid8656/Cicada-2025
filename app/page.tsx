@@ -55,9 +55,9 @@ export default function HomePage() {
                 className="w-70 h-35 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -65,9 +65,9 @@ export default function HomePage() {
                 className="w-60 h-30 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="ScriptVerse"
+                className="w-90 h-45 object-contain"
               />
                           </div>
             <div className="flex gap-16 items-center flex-shrink-0">
@@ -78,7 +78,7 @@ export default function HomePage() {
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
+                alt="ScriptVerse"
                 className="w-82 h-41 object-contain"
               />
               <img
@@ -99,9 +99,9 @@ export default function HomePage() {
                 className="w-70 h-35 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -109,9 +109,9 @@ export default function HomePage() {
                 className="w-60 h-30 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="ScriptVerse"
+                className="w-90 h-45 object-contain"
               />
                           </div>
             <div className="flex gap-16 items-center flex-shrink-0">
@@ -121,9 +121,9 @@ export default function HomePage() {
                 className="w-70 h-35 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -131,9 +131,9 @@ export default function HomePage() {
                 className="w-60 h-30 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="ScriptVerse"
+                className="w-90 h-45 object-contain"
               />
                           </div>
             <div className="flex gap-16 items-center flex-shrink-0">
@@ -143,9 +143,9 @@ export default function HomePage() {
                 className="w-70 h-35 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -153,9 +153,9 @@ export default function HomePage() {
                 className="w-60 h-30 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="ScriptVerse"
+                className="w-90 h-45 object-contain"
               />
                           </div>
             <div className="flex gap-16 items-center flex-shrink-0">
@@ -165,9 +165,9 @@ export default function HomePage() {
                 className="w-70 h-35 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -175,9 +175,9 @@ export default function HomePage() {
                 className="w-60 h-30 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="ScriptVerse"
+                className="w-90 h-45 object-contain"
               />
                           </div>
           </div>
