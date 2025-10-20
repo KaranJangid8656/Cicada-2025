@@ -215,9 +215,11 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                 <p className="text-muted-foreground mb-3">
                   Contact the organizing team for any queries.
                 </p>
-                <Button variant="outline" className="w-full" size="sm">
-                  Contact Organizers
-                </Button>
+                <a href="mailto:karansuthar9565@gmail.com" className="block w-full">
+                  <Button variant="outline" className="w-full cursor-pointer" size="sm">
+                    Contact Organizers
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
