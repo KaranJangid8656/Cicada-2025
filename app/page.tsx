@@ -69,29 +69,7 @@ export default function HomePage() {
                 alt="ScriptVerse"
                 className="w-90 h-45 object-contain"
               />
-                          </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-82 h-41 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-                          </div>
+            </div>
             <div className="flex gap-16 items-center flex-shrink-0">
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
@@ -113,73 +91,7 @@ export default function HomePage() {
                 alt="ScriptVerse"
                 className="w-90 h-45 object-contain"
               />
-                          </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-90 h-45 object-contain"
-              />
-                          </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-90 h-45 object-contain"
-              />
-                          </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-90 h-45 object-contain"
-              />
-                          </div>
+            </div>
           </div>
         </div>
       </section>
