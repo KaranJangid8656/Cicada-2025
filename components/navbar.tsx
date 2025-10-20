@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Instagram, Mail, MapPin, Phone, Menu } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
@@ -44,7 +45,7 @@ export function Navbar() {
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="sm" aria-label="Open menu">
-                Menu
+                <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-64">

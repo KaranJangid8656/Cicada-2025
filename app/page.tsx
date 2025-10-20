@@ -60,11 +60,6 @@ export default function HomePage() {
                 className="w-90 h-45 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
-                className="w-60 h-30 object-contain"
-              />
-              <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
                 alt="Unstop"
                 className="w-60 h-30 object-contain"
@@ -87,9 +82,26 @@ export default function HomePage() {
                 className="w-82 h-41 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
+                alt="Unstop"
                 className="w-60 h-30 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                alt="Red Bull"
+                className="w-60 h-30 object-contain"
+              />
+                          </div>
+            <div className="flex gap-16 items-center flex-shrink-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
+                alt="Monster Energy"
+                className="w-70 h-35 object-contain"
+              />
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                alt="Google Pay"
+                className="w-90 h-45 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -114,11 +126,6 @@ export default function HomePage() {
                 className="w-90 h-45 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
-                className="w-60 h-30 object-contain"
-              />
-              <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
                 alt="Unstop"
                 className="w-60 h-30 object-contain"
@@ -141,11 +148,6 @@ export default function HomePage() {
                 className="w-90 h-45 object-contain"
               />
               <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
-                className="w-60 h-30 object-contain"
-              />
-              <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
                 alt="Unstop"
                 className="w-60 h-30 object-contain"
@@ -166,38 +168,6 @@ export default function HomePage() {
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
                 alt="Google Pay"
                 className="w-90 h-45 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-                          </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="Google Pay"
-                className="w-90 h-45 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760347841/dominos-logo4-removebg-preview_vdiqlk.png"
-                alt="Domino's"
-                className="w-60 h-30 object-contain"
               />
               <img
                 src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
@@ -219,7 +189,7 @@ export default function HomePage() {
           <div className="rounded-xl p-6 bg-accent text-accent-foreground">
             <h3 className="text-xl md:text-2xl font-semibold text-green-400">About CICADA</h3>
             <p className="mt-3 text-sm md:text-base text-muted-foreground">
-              CICADA 2025 is AIT’s flagship tech fest—one week of hands‑on workshops, competitions, talks, and creative
+              CICADA 2025 is AIT’s flagship tech fest three days of hands‑on workshops, competitions, talks, and creative
               showcases led by student clubs. It’s where ideas turn into prototypes and teams into communities.
             </p>
             <p className="mt-3 text-sm md:text-base text-muted-foreground">
@@ -299,9 +269,9 @@ export default function HomePage() {
             <div id="faq-1" className="hidden">
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  CICADA 2025 is Atria Institute of Technology's premier annual technology festival featuring workshops,
+                  CICADA 2025 is Atria Institute of Technology's premier annual technology festival featuring workshops,Hackathons,
                   competitions, tech talks, and showcases across AI, Robotics, Cybersecurity, Design, and Development.
-                  It's a week-long celebration of innovation and learning by building.
+                  It's a 3 daylong celebration of innovation and learning by building.
                 </p>
               </div>
             </div>
@@ -334,8 +304,8 @@ export default function HomePage() {
             <div id="faq-2" className="hidden">
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Any student from Atria Institute of Technology can participate. We welcome beginners and advanced
-                  builders alike. Many events support solo entries, while others encourage team participation.
+                  Open to all Atrians and Non Atrians
+                  
                 </p>
               </div>
             </div>
@@ -369,7 +339,7 @@ export default function HomePage() {
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
                   Visit the Events page, browse available events, and click the Register button on any event you're
-                  interested in. Each event has its own Google Form for registration. Teams can register together
+                  interested in. Teams can register together
                   or add members later according to event rules.
                 </p>
               </div>
@@ -404,7 +374,7 @@ export default function HomePage() {
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
                   Yes! Most events offer exciting prizes, mentorship opportunities, and recognition. We have prize tracks
-                  across different categories, and industry mentors provide guidance throughout the festival.
+                  across different categories, cash prizes, and certificates.
                 </p>
               </div>
             </div>
@@ -437,8 +407,8 @@ export default function HomePage() {
             <div id="faq-5" className="hidden">
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  CICADA 2025 takes place at Atria Institute of Technology in Hebbal, Bengaluru. The exact dates will be
-                  announced soon. Stay tuned to our website and social media for the latest updates on scheduling.
+                  CICADA 2025 takes place at Atria Institute of Technology in Hebbal, Bengaluru from 5th Nov to 7th Nov
+                  Stay tuned to our website and social media for the latest updates on scheduling.
                 </p>
               </div>
             </div>

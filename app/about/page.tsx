@@ -44,37 +44,30 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <section className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-border bg-card p-6">
-            <h3 className="text-lg font-semibold">Participating Clubs</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              AI Club, Robotics Club, Cybersecurity Club, Design Club, Developers Society, Aero & Robotics, and more.
-            </p>
+        <section className="mt-10">
+          <h3 className="text-xl font-semibold mb-6 text-center">Participating Clubs</h3>
+          <div className="flex justify-center gap-8">
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png"
+              alt="CyberSec Club"
+              className="w-40 h-40 rounded-full object-cover"
+            />
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760960677/iot_forge-modified_v2gvml.png"
+              alt="IoT Forge Club"
+              className="w-40 h-40 rounded-full object-cover -mt-1 ml-3 border-2 border-white"
+            />
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760378401/ai_club-removebg-preview_szuluv.png"
+              alt="AI Club"
+              className="w-40 h-40 rounded-full object-cover"
+            />
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760959250/E-Cell_Atria_Logo_Option_4_1_h0lvih.jpg"
+              alt="E-Cell Atria"
+              className="w-40 h-40 rounded-full object-cover"
+            />
           </div>
-          <div className="rounded-xl border border-border bg-card p-6">
-            <h3 className="text-lg font-semibold">How to Participate</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Explore the Events page, open an event to view details, and use the Register button to access the Google
-              Form. Teams can register together or add teammates later per event rules.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-10 rounded-xl border border-border bg-card p-6">
-          <h3 className="text-lg font-semibold">FAQ</h3>
-          <ul className="mt-3 text-sm text-muted-foreground space-y-2">
-            <li>
-              <span className="text-foreground font-medium">Who can join?</span> Any AIT student; beginners welcome.
-            </li>
-            <li>
-              <span className="text-foreground font-medium">Do I need a team?</span> Many events support solo entries;
-              check team size in details.
-            </li>
-            <li>
-              <span className="text-foreground font-medium">Where do I register?</span> Each event has a Register button
-              that links to its Google Form.
-            </li>
-          </ul>
         </section>
       </section>
       <Footer />

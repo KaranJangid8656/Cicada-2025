@@ -23,15 +23,15 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               {/* Club Info & Image Side by Side */}
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Event Image */}
-                <div className="md:w-80 flex-shrink-0">
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-lg group">
+                <div className={`flex-shrink-0 ${event.slug === 'hackathon' ? 'w-48' : 'md:w-80'}`}>
+                  <div className={`relative ${event.slug === "markethon" ? 'h-auto' : event.slug === "esports" ? 'aspect-[3/2]' : event.slug === 'hackathon' ? 'h-auto' : 'aspect-[4/3]'} ${event.slug === 'hackathon' ? 'bg-transparent' : 'rounded-2xl overflow-hidden border border-border shadow-lg'} group`}>
                     <img
                       src={
                         event.coverImage ||
                         `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(event.title)}`
                       }
                       alt={event.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full ${event.slug === "markethon" || event.slug === 'hackathon' ? 'object-contain' : event.slug === "esports" || event.slug === "intruverse-ctf" || event.slug === "proto-race" || event.slug === "ipl-auction" || event.slug === "llm-odyssey" ? 'object-cover' : 'object-contain'}`}
                     />
                   </div>
                 </div>
@@ -84,70 +84,74 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </div>
             </div>
 
-            {/* What You'll Gain */}
-            <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Award className="h-5 w-5 text-primary" />
-                What You'll Gain
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Target className="h-5 w-5 text-primary" />
+            {/* What You'll Gain - Hidden for esports */}
+            {event.slug !== 'esports' && (
+              <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Award className="h-5 w-5 text-primary" />
+                  What You'll Gain
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex gap-3">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Target className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Hands-on Experience</h4>
+                      <p className="text-sm text-muted-foreground">Practical learning through real challenges</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Hands-on Experience</h4>
-                    <p className="text-sm text-muted-foreground">Practical learning through real challenges</p>
+                  <div className="flex gap-3">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Lightbulb className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Skill Development</h4>
+                      <p className="text-sm text-muted-foreground">Enhance your technical capabilities</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="h-5 w-5 text-primary" />
+                  <div className="flex gap-3">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Users className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Networking</h4>
+                      <p className="text-sm text-muted-foreground">Connect with like-minded peers</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Skill Development</h4>
-                    <p className="text-sm text-muted-foreground">Enhance your technical capabilities</p>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Users className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Networking</h4>
-                    <p className="text-sm text-muted-foreground">Connect with like-minded peers</p>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Award className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Recognition</h4>
-                    <p className="text-sm text-muted-foreground">Certificates and prizes for winners</p>
+                  <div className="flex gap-3">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Award className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Recognition</h4>
+                      <p className="text-sm text-muted-foreground">Certificates and prizes for winners</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
 
-            {/* Requirements */}
-            <div className="bg-card rounded-2xl p-6 border border-border">
-              <h3 className="text-xl font-bold mb-4">Requirements</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Laptop with necessary software installed</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Valid college ID for entry</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Team registration completed before deadline</span>
-                </li>
-              </ul>
-            </div>
+            {/* Requirements - Hidden for esports */}
+            {event.slug !== 'esports' && (
+              <div className="bg-card rounded-2xl p-6 border border-border">
+                <h3 className="text-xl font-bold mb-4">Requirements</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Laptop with necessary software installed</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Valid college ID for entry</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <span>Team registration completed before deadline</span>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
