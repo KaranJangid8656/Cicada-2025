@@ -23,15 +23,32 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               {/* Club Info & Image Side by Side */}
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Event Image */}
-                <div className={`flex-shrink-0 ${event.slug === 'hackathon' ? 'w-48' : 'md:w-80'}`}>
-                  <div className={`relative ${event.slug === "markethon" ? 'h-auto' : event.slug === "esports" ? 'aspect-[3/2]' : event.slug === 'hackathon' ? 'h-auto' : 'aspect-[4/3]'} ${event.slug === 'hackathon' ? 'bg-transparent' : 'rounded-2xl overflow-hidden border border-border shadow-lg'} group`}>
+                <div className={`flex-shrink-0 ${event.slug === 'esports' ? 'w-full max-w-sm h-60' : 'md:w-80'}`}>
+                  <div className={`relative ${event.slug === 'esports' ? 'h-58' : 'aspect-[4/3]'} rounded-2xl overflow-hidden border border-border shadow-lg group ${event.slug === 'esports' ? 'bg-black/5 p-0' : ''}`}>
                     <img
                       src={
                         event.coverImage ||
                         `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(event.title)}`
                       }
                       alt={event.title}
-                      className={`w-full h-full ${event.slug === "markethon" || event.slug === 'hackathon' ? 'object-contain' : event.slug === "esports" || event.slug === "intruverse-ctf" || event.slug === "proto-race" || event.slug === "ipl-auction" || event.slug === "llm-odyssey" ? 'object-cover' : 'object-contain'}`}
+                      className={`w-full h-full ${
+                        ['hackathon', 'intruverse-ctf', 'ipl-auction', 'proto-race', 'markethon', 'esports', 'agentic-ai'].includes(event.slug) 
+                          ? 'object-cover' 
+                          : 'object-contain'
+                      }`}
+                      style={{
+                        ...(event.slug === 'intruverse-ctf' && { objectPosition: '20% 30%' }),
+                        ...(event.slug === 'ipl-auction' && { objectPosition: 'center 20%' }),
+                        ...(event.slug === 'proto-race' && { objectPosition: 'center 25%' }),
+                        ...(event.slug === 'markethon' && { objectPosition: 'center 60%' }),
+                        ...(event.slug === 'esports' && { 
+                          objectFit: 'cover',
+                          width: '100%',
+                          height: '100%',
+                          objectPosition: 'center 30%'
+                        }),
+                        ...(event.slug === 'agentic-ai' && { objectPosition: 'center 30%' })
+                      }}
                     />
                   </div>
                 </div>
@@ -41,31 +58,33 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                     {event.title}
                   </h1>
 
-                  {/* Quick Info Pills */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
-                      <Calendar className="h-4 w-4 text-primary" />
-                      <span className="font-medium">{event.date}</span>
-                    </div>
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
-                      <Clock className="h-4 w-4 text-primary" />
-                      <span className="font-medium">{event.Duration}</span>
-                    </div>
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
-                      <Users className="h-4 w-4 text-primary" />
-                      <span className="font-medium">{event.teamSize}</span>
-                    </div>
-                    {event.mode && (
+                  {/* Quick Info Pills - Hidden for esports */}
+                  {event.slug !== 'esports' && (
+                    <div className="flex flex-wrap gap-2 mb-4">
                       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
-                        <Wifi className="h-4 w-4 text-primary" />
-                        <span className="font-medium">{event.mode}</span>
+                        <Calendar className="h-4 w-4 text-primary" />
+                        <span className="font-medium">{event.date}</span>
                       </div>
-                    )}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
-                      <MapPin className="h-4 w-4 text-primary" />
-                      <span className="font-medium">{event.venue}</span>
+                      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
+                        <Clock className="h-4 w-4 text-primary" />
+                        <span className="font-medium">{event.Duration}</span>
+                      </div>
+                      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
+                        <Users className="h-4 w-4 text-primary" />
+                        <span className="font-medium">{event.teamSize}</span>
+                      </div>
+                      {event.mode && (
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
+                          <Wifi className="h-4 w-4 text-primary" />
+                          <span className="font-medium">{event.mode}</span>
+                        </div>
+                      )}
+                      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 text-sm">
+                        <MapPin className="h-4 w-4 text-primary" />
+                        <span className="font-medium">{event.venue}</span>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>

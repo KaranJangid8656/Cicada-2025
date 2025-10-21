@@ -11,23 +11,101 @@ export default function HomePage() {
   const sponsorRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const sponsorDiv = sponsorRef.current
-    if (sponsorDiv) {
-      let position = 0
-      const speed = window.innerWidth < 768 ? 6 : 4 // Faster on mobile, standard on desktop
-      const animate = () => {
-        position -= speed
-        sponsorDiv.style.transform = `translateX(${position}px)`
-        // Reset when scrolled past approximately one set (adjust based on content width)
-        const setWidth = 2000 // Approximate width for one set (5 images + gaps)
-        if (Math.abs(position) >= setWidth) {
-          position = 0
-        }
-        requestAnimationFrame(animate)
-      }
-      animate()
+    const sponsorContainer = document.querySelector('.sponsor-container') as HTMLElement;
+    if (!sponsorContainer) return;
+
+    // Optimize for mobile performance
+    const isMobile = window.innerWidth < 768;
+    
+    // Force hardware acceleration and optimize for mobile
+    sponsorContainer.style.willChange = 'transform';
+    sponsorContainer.style.backfaceVisibility = 'hidden';
+    
+    const sponsorItems = document.querySelectorAll('.sponsor-item');
+    if (sponsorItems.length === 0) return;
+
+    // Clone sponsor items for seamless looping (only once)
+    if (sponsorContainer.children.length <= sponsorItems.length) {
+      const items = Array.from(sponsorItems);
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        sponsorContainer.appendChild(clone);
+      });
     }
-  }, [])
+
+    let animationId: number;
+    let position = 0;
+    const baseSpeed = isMobile ? 0.5 : 0.8; // Slower speed on mobile
+    let speed = baseSpeed;
+    let lastTime = 0;
+    
+    // Use a single item's width for calculation
+    const firstItem = sponsorItems[0] as HTMLElement;
+    if (!firstItem) return;
+    
+    const itemStyle = window.getComputedStyle(firstItem);
+    const itemWidth = firstItem.offsetWidth + 
+                     parseFloat(itemStyle.marginLeft) + 
+                     parseFloat(itemStyle.marginRight);
+    
+    // Simplified animation function for better mobile performance
+    const animate = (timestamp: number) => {
+      if (!lastTime) lastTime = timestamp;
+      
+      // Throttle updates for mobile
+      if (isMobile && timestamp - lastTime < 16) { // ~60fps
+        animationId = requestAnimationFrame(animate);
+        return;
+      }
+      
+      position -= speed;
+      
+      // Reset position when we've scrolled one full set of items
+      if (Math.abs(position) >= itemWidth * sponsorItems.length) {
+        position = 0;
+      }
+      
+      // Use transform with will-change for optimal performance
+      sponsorContainer.style.transform = `translateX(${position}px)`;
+      
+      lastTime = timestamp;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    // Start animation with a small delay to allow for initial render
+    const startAnimation = setTimeout(() => {
+      animationId = requestAnimationFrame(animate);
+    }, 100);
+
+    // Handle device orientation changes
+    const handleResize = () => {
+      // Adjust speed based on orientation
+      speed = window.innerWidth < 768 ? 0.5 : 0.8;
+    };
+    
+    // Pause animation when tab is not visible
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        cancelAnimationFrame(animationId);
+      } else {
+        lastTime = 0;
+        animationId = requestAnimationFrame(animate);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    // Cleanup function
+    return () => {
+      clearTimeout(startAnimation);
+      cancelAnimationFrame(animationId);
+      window.removeEventListener('resize', handleResize);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      sponsorContainer.style.willChange = 'auto';
+      sponsorContainer.style.backfaceVisibility = '';
+    };
+  }, []);
 
   return (
     <main>
@@ -47,51 +125,41 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 md:px-6 mt-16">
         <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Our Proud Partners</h2>
         <div className="relative overflow-hidden py-8">
-          <div className="flex gap-16 items-center animate-scroll-left">
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-90 h-45 object-contain"
-              />
-            </div>
-            <div className="flex gap-16 items-center flex-shrink-0">
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
-                alt="Monster Energy"
-                className="w-70 h-35 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
-                alt="Red Bull"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                alt="Unstop"
-                className="w-60 h-30 object-contain"
-              />
-              <img
-                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
-                alt="ScriptVerse"
-                className="w-90 h-45 object-contain"
-              />
-            </div>
+          <div className="relative overflow-hidden w-full">
+          <div className="flex gap-16 items-center sponsor-container" ref={sponsorRef}>
+            {[...Array(2)].map((_, index) => (
+              <div key={`sponsor-group-${index}`} className="flex gap-16 items-center flex-shrink-0">
+                <div className="sponsor-item flex-shrink-0">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760802401/hd-white-monster-energy-logo-png-701751694778506qte0bhllt8-removebg-preview-removebg-preview_slhyah.png"
+                    alt="Monster Energy"
+                    className="w-70 h-35 object-contain"
+                  />
+                </div>
+                <div className="sponsor-item flex-shrink-0">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
+                    alt="Red Bull"
+                    className="w-60 h-30 object-contain"
+                  />
+                </div>
+                <div className="sponsor-item flex-shrink-0">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
+                    alt="Unstop"
+                    className="w-60 h-30 object-contain"
+                  />
+                </div>
+                <div className="sponsor-item flex-shrink-0">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
+                    alt="ScriptVerse"
+                    className="w-90 h-45 object-contain"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
           </div>
         </div>
       </section>
