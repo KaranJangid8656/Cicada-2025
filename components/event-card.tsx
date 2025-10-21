@@ -23,8 +23,8 @@ export function EventCard({ event }: { event: Event }) {
                       Flagship Event
                     </span>
                   )}
-                  <div className="text-xs text-muted-foreground mt-0.5">
-                    {event.slug === "ipl-auction" || event.slug === "project-expo" || event.slug === "esports" ? "Team Cicada" : ""}
+                  <div className="text-xs text-white font-medium mt-0.5">
+                    {event.slug === "ipl-auction" || event.slug === "project-expo" || event.slug === "esports" ? "Team CICADA" : ""}
                   </div>
                 </div>
               </div>

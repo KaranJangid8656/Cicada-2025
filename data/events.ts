@@ -32,22 +32,32 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025", // replace later with Google Form
   },
-  
   {
-    slug: "intruverse-ctf",
-    title: "INTRUVERSE: The Local Breach",
-    summary: "Offline VM-based CTF: hack, exploit, and capture the root flag!",
-    description: `INTRUVERSE is a fully offline, VM-based Capture The Flag (CTF) challenge crafted to test your real-world hacking mindset. Each team will face a self-contained virtual environment filled with hidden vulnerabilities, twisted logic, and chained exploits. Your mission: gain access, move through the system, and uncover the ultimate root flag.\n\nFlag Stages:\n1. User-level flag\n2. Root-level flag\n3. Hidden metadata flag\n\nEach team gets access to a unique target machine on their own system. The CTF includes multiple flag stages, all contributing to a cumulative score.\n\nLearning Outcomes:\n• Practice real-world offensive skills: exploit discovery, chaining, and privilege escalation\n• Work with isolated VMs and safe offline hacking workflows\n• Analyze forensics & hidden metadata to recover flags\n• Improve team coordination under timed, adversarial conditions`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
-    clubName: "Cybersecurity Club",
-    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
-    date: "Nov 6, 2025",
-    Duration: "3 - 4 hours",
-    teamSize: "2 members per team",
+    slug: "esports",
+    title: "Esports Tournament: Free Fire and BGMI",
+    summary: "Compete in Free Fire and BGMI tournaments in teams of 4. Showcase your skills and win prizes!",
+    description: `ESPORTS TOURNAMENT 2025
+
+        Gear up for the ultimate Esports showdown at CICADA 2025! Whether you're a clutch master, a sniper pro, or the ultimate strategist, this is your chance to prove your gaming skills on the big stage.
+
+Form a squad of 4 players and compete in two of the most iconic battle royale titles — Free Fire and PUBG Mobile. Each match will test your team coordination, reaction time, and game sense as you fight for survival and domination. With thrilling matches, intense rivalries, and high stakes, CICADA 2025's Esports tournament is where legends are made. Stand out with your strategies, communicate flawlessly with your teammates, and showcase your reflexes to claim victory.
+
+Top-performing teams will not only earn bragging rights but also grab exciting prizes and exclusive recognition at the event. Spectators can enjoy live streams, match highlights, and real-time leaderboards to keep the adrenaline pumping.
+
+Don't miss this opportunity to experience the rush of competitive gaming, meet fellow esports enthusiasts, and make your mark on CICADA 2025. Sign up now, assemble your squad, and prepare to dominate the battlefield!
+
+
+`,
+    coverImage: "/pubg.jpg",
+    clubName: "Esports Club",
+    clubLogo: "/ait-ai-club-logo.jpg",
+    date: "Oct 23-24, 2025",
+    Duration: "2 days",
+    teamSize: "4 members per team",
     venue: "Atria Institute of Technology",
-    registrationFee: "₹150 per team",
+    registrationFee: "₹200 per pass",
     mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
+    registerUrl: "https://konfhub.com/cicada-esports",
   },
   {
     slug: "agentic-ai",
@@ -65,6 +75,24 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://unstop.com/p/agentic-ai-ideathon-atria-institute-of-technology-1576729?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=congratulations-your-listing-for-agentic-ai-ideathon-is-complete",
   },
+  {
+    slug: "intruverse-ctf",
+    title: "INTRUVERSE: The Local Breach",
+    summary: "Offline VM-based CTF: hack, exploit, and capture the root flag!",
+    description: `INTRUVERSE is a fully offline, VM-based Capture The Flag (CTF) challenge crafted to test your real-world hacking mindset. Each team will face a self-contained virtual environment filled with hidden vulnerabilities, twisted logic, and chained exploits. Your mission: gain access, move through the system, and uncover the ultimate root flag.\n\nFlag Stages:\n1. User-level flag\n2. Root-level flag\n3. Hidden metadata flag\n\nEach team gets access to a unique target machine on their own system. The CTF includes multiple flag stages, all contributing to a cumulative score.\n\nLearning Outcomes:\n• Practice real-world offensive skills: exploit discovery, chaining, and privilege escalation\n• Work with isolated VMs and safe offline hacking workflows\n• Analyze forensics & hidden metadata to recover flags\n• Improve team coordination under timed, adversarial conditions`,
+    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
+    clubName: "Cybersecurity Club",
+    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
+    date: "Nov 6, 2025",
+    Duration: "3 - 4 hours",
+    teamSize: "2 members per team",
+    venue: "Atria Institute of Technology",
+    registrationFee: "₹150 per team",
+    mode: "Offline",
+    registerUrl: "https://konfhub.com/cicada-2025",
+  },
+  
+  
   {
     slug: "ipl-auction",
     title: "IPL Auction: Cricket Strategy Challenge",
@@ -114,33 +142,7 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
-  {
-    slug: "esports",
-    title: "Esports Tournament: Free Fire and BGMI",
-    summary: "Compete in Free Fire and BGMI tournaments in teams of 4. Showcase your skills and win prizes!",
-    description: `ESPORTS TOURNAMENT 2025
-
-        Gear up for the ultimate Esports showdown at CICADA 2025! Whether you're a clutch master, a sniper pro, or the ultimate strategist, this is your chance to prove your gaming skills on the big stage.
-
-Form a squad of 4 players and compete in two of the most iconic battle royale titles — Free Fire and PUBG Mobile. Each match will test your team coordination, reaction time, and game sense as you fight for survival and domination. With thrilling matches, intense rivalries, and high stakes, CICADA 2025's Esports tournament is where legends are made. Stand out with your strategies, communicate flawlessly with your teammates, and showcase your reflexes to claim victory.
-
-Top-performing teams will not only earn bragging rights but also grab exciting prizes and exclusive recognition at the event. Spectators can enjoy live streams, match highlights, and real-time leaderboards to keep the adrenaline pumping.
-
-Don't miss this opportunity to experience the rush of competitive gaming, meet fellow esports enthusiasts, and make your mark on CICADA 2025. Sign up now, assemble your squad, and prepare to dominate the battlefield!
-
-
-`,
-    coverImage: "/pubg.jpg",
-    clubName: "Esports Club",
-    clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Oct 23-24, 2025",
-    Duration: "2 days",
-    teamSize: "4 members per team",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹200 per pass",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-esports",
-  },
+  
   
     {
     slug: "project-expo",
