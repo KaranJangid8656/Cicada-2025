@@ -32,6 +32,22 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025", // replace later with Google Form
   },
+   {
+    slug: "intruverse-ctf",
+    title: "INTRUVERSE: The Local Breach",
+    summary: "Offline VM-based CTF: hack, exploit, and capture the root flag!",
+    description: `INTRUVERSE is a fully offline, VM-based Capture The Flag (CTF) challenge crafted to test your real-world hacking mindset. Each team will face a self-contained virtual environment filled with hidden vulnerabilities, twisted logic, and chained exploits. Your mission: gain access, move through the system, and uncover the ultimate root flag.\n\nFlag Stages:\n1. User-level flag\n2. Root-level flag\n3. Hidden metadata flag\n\nEach team gets access to a unique target machine on their own system. The CTF includes multiple flag stages, all contributing to a cumulative score.\n\nLearning Outcomes:\n• Practice real-world offensive skills: exploit discovery, chaining, and privilege escalation\n• Work with isolated VMs and safe offline hacking workflows\n• Analyze forensics & hidden metadata to recover flags\n• Improve team coordination under timed, adversarial conditions`,
+    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
+    clubName: "Cybersecurity Club",
+    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
+    date: "Nov 6, 2025",
+    Duration: "3 - 4 hours",
+    teamSize: "2 members per team",
+    venue: "Atria Institute of Technology",
+    registrationFee: "₹150 per team",
+    mode: "Offline",
+    registerUrl: "https://konfhub.com/cicada-2025",
+  },
   {
     slug: "ipl-auction",
     title: "IPL Auction: Cricket Strategy Challenge",
@@ -48,7 +64,7 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
-  
+ 
   {
     slug: "agentic-ai",
     title: "Agentic AI challenge",
@@ -81,22 +97,7 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
-  {
-    slug: "intruverse-ctf",
-    title: "INTRUVERSE: The Local Breach",
-    summary: "Offline VM-based CTF: hack, exploit, and capture the root flag!",
-    description: `INTRUVERSE is a fully offline, VM-based Capture The Flag (CTF) challenge crafted to test your real-world hacking mindset. Each team will face a self-contained virtual environment filled with hidden vulnerabilities, twisted logic, and chained exploits. Your mission: gain access, move through the system, and uncover the ultimate root flag.\n\nFlag Stages:\n1. User-level flag\n2. Root-level flag\n3. Hidden metadata flag\n\nEach team gets access to a unique target machine on their own system. The CTF includes multiple flag stages, all contributing to a cumulative score.\n\nLearning Outcomes:\n• Practice real-world offensive skills: exploit discovery, chaining, and privilege escalation\n• Work with isolated VMs and safe offline hacking workflows\n• Analyze forensics & hidden metadata to recover flags\n• Improve team coordination under timed, adversarial conditions`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
-    clubName: "Cybersecurity Club",
-    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
-    date: "Nov 6, 2025",
-    Duration: "3 - 4 hours",
-    teamSize: "2 members per team",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹150 per team",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
+  
   
   
   {
