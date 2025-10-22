@@ -24,7 +24,7 @@ export const events: Event[] = [
     coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1761035597/CICADA_HACKATHON_srpido.png",
     clubName: "AIT  Club",
     clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Nov 6-7, 2025",
+    date: "Nov 7-8, 2025",
     Duration: "24 Hours",
     teamSize: "3 - 4 members",
     venue: "Atria Institute of Technology",
