@@ -1,16 +1,21 @@
 # CICADA 2025
 
-![Cicada Logo](https://res.cloudinary.com/dx9bvma03/image/upload/v1760198155/cicada_logo_no_bg_m0sjov.png)
+<div align="center">\n<img src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760198155/cicada_logo_no_bg_m0sjov.png" alt="CICADA logo" width="200" height="auto" />\n</div>
 
 CICADA 2025 is Atria Institute of Technology's premier annual technology festival featuring workshops, competitions, tech talks, and showcases across AI, Robotics, Cybersecurity, Design, and Development. It's a week-long celebration of innovation and learning by building.
 
 ## Features
 
-- **Event Listings**: Browse and register for various tech events.
-- **Sponsor Showcase**: View our proud partners and sponsors.
+- **Event Listings**: Browse and register for various tech events including hackathons, esports tournaments, AI challenges, CTF competitions, IPL auctions, IoT races, marketing marathons, and project expos.
+- **Sponsor Showcase**: View our proud partners and sponsors with an animated carousel.
 - **Responsive Design**: Optimized for desktop and mobile devices.
 - **Interactive Navbar**: Navigation with links to Home, Events, Brochure, and About.
-- **Smooth Animations**: Scrolling sponsor carousel and more.
+- **Smooth Animations**: Scrolling sponsor carousel, hover effects, and interactive elements.
+- **Featured Events Section**: Highlighted upcoming events with detailed descriptions and registration links.
+- **About Section**: Information about CICADA 2025, including hands-on learning, multi-club involvement, showcases, and inclusivity.
+- **Venue Integration**: Interactive map showing the location of Atria Institute of Technology.
+- **FAQ Section**: Collapsible frequently asked questions for easy access to event details.
+- **Footer**: Links to social media and additional resources.
 
 ## Installation
 
