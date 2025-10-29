@@ -10,7 +10,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 const links = [
   { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
-  { href: "/Cicada-Brochure.pdf", label: "Brochure" },
+  { href: "/Cicada Brochure-1_compress.pdf", label: "Brochure" },
   { href: "/about", label: "About" },
 ]
 
