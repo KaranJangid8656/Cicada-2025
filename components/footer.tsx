@@ -1,9 +1,15 @@
+"use client";
+
 import Link from "next/link"
 import { Instagram, Mail, MapPin, Phone } from "lucide-react"
+import { ContactOrganizersDialog } from "./ContactOrganizersDialog"
+import React, { useState } from "react"
 
 export function Footer() {
+  const [contactDialogOpen, setContactDialogOpen] = useState(false)
   return (
     <footer className="mt-16 border-t border-border">
+      <ContactOrganizersDialog open={contactDialogOpen} onOpenChange={setContactDialogOpen} />
       <div className="mx-auto max-w-7xl px-6 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
@@ -52,7 +58,7 @@ export function Footer() {
             <a
               href="https://www.instagram.com/cicada_atria?igsh=dmp0Ym1hM3dneXc3"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               className="hover:text-primary transition-colors"
               aria-label="Instagram"
             >
@@ -65,20 +71,21 @@ export function Footer() {
             >
               <Mail className="h-5 w-5" />
             </a>
-            <a
-              href="tel:+919986837400"
-              className="hover:text-primary transition-colors"
+            <button
+              type="button"
+              onClick={() => setContactDialogOpen(true)}
+              className="hover:text-primary transition-colors p-0 bg-transparent border-none cursor-pointer"
               aria-label="Phone"
             >
               <Phone className="h-5 w-5" />
-            </a>
+            </button>
           </div>
           <ul className="space-y-2 text-muted-foreground">
             <li>
               <a
                 href="https://maps.google.com/maps?q=Atria+Institute+of+Technology+Hebbal+Bengaluru"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer noopener"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <MapPin className="h-4 w-4" />

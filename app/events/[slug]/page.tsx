@@ -291,7 +291,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                     <a
                       href="https://maps.app.goo.gl/1yVpn5oqd8wJkyA88"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noreferrer noopener"
                       className="text-base font-semibold hover:text-primary transition-colors inline-flex items-center gap-1"
                     >
                       {event.venue}
