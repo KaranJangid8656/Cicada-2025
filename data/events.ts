@@ -168,7 +168,7 @@ Challenge Streams:
     coverImage: "/pubg.jpg",
     clubName: "Esports Club",
     clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Oct 23-24, 2025",
+    date: "Oct 31 , 2025",
     Duration: "2 days",
     teamSize: "4 members per team",
     venue: "Atria Institute of Technology",

@@ -269,6 +269,10 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                 </div>
                 <div className="p-6 space-y-4">
                   <div>
+                    <p className="text-sm font-medium text-muted-foreground mb-1">Date</p>
+                    <p className="text-base font-semibold">{event.date}</p>
+                  </div>
+                  <div>
                     <p className="text-sm font-medium text-muted-foreground mb-1">Duration</p>
                     <p className="text-base font-semibold">{event.Duration}</p>
                   </div>
