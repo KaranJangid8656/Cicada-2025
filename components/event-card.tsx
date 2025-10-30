@@ -28,7 +28,7 @@ export function EventCard({ event }: { event: Event }) {
                       {event.slug === "ipl-auction" || event.slug === "project-expo" || event.slug === "esports" ? "Team CICADA" : ""}
                     </span>
                     {event.slug === 'project-expo' && (
-                      <span className="text-xs bg-blue-500/10 text-blue-500 border border-blue-500/30 rounded-full px-2 py-0.5">
+                      <span className="text-xs bg-green-500/20 text-green-500 border border-green-500/30 rounded-full px-2 py-0.5">
                         📌 7th-semester only
                       </span>
                     )}
