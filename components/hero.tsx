@@ -28,7 +28,7 @@ export function Hero() {
                 <Link href="/events">Explore Events</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="/about">Learn More</Link>
+                <a href="/Cicada Brochure-1_compress.pdf" target="_blank" rel="noopener noreferrer">Brochure</a>
               </Button>
             </div>
           </div>

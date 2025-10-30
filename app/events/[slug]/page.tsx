@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { events } from "@/data/events"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, MapPin, Users, Wifi, ExternalLink, Award, Target, Lightbulb } from "lucide-react"
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog"
 
 export default function EventDetailPage({ params }: { params: { slug: string } }) {
   const event = events.find((e) => e.slug === params.slug)
@@ -103,6 +104,72 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </div>
             </div>
 
+           {/* Prizes & Recognition - For specific events */}
+           {(event.slug === 'intruverse-ctf' || event.slug === 'hackathon' || event.slug === 'ipl-auction' || event.slug === 'agentic-ai' || event.slug === 'proto-race' || event.slug === 'markethon' || event.slug === 'project-expo') && (
+  <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
+    
+    <h3 className="text-xl font-bold mb-6 flex items-center gap-2 relative z-10">
+      <Award className="h-5 w-5 text-primary" />
+      What's In It For You?
+    </h3>
+    
+    <div className="relative z-10 space-y-4">
+      {/* Prize Money Section - Dramatic Split */}
+      <div className="grid md:grid-cols-2 gap-3">
+        {/* Champion */}
+        <div className="group relative bg-black/60 rounded-xl p-5 border-2 border-gray-700/50 hover:border-gray-600 transition-all duration-300 hover:-translate-y-1">
+          <div className="flex items-start justify-between mb-3">
+            <div>
+              <div className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-1">
+                {event.slug === 'hackathon' ? '1st Prize' : event.slug === 'ipl-auction' ? 'Winners' : 'Winners'}
+              </div>
+              <div className="text-4xl font-black text-white mb-1 group-hover:scale-110 transition-transform">
+                {event.slug === 'hackathon' ? '₹15,000' : event.slug === 'ipl-auction' ? '₹3,000' : event.slug === 'project-expo' ? '₹8,000' : '₹2,000'}
+              </div>
+              <div className="text-xs text-gray-500">Cash Prize</div>
+            </div>
+            <div className="text-4xl opacity-20 group-hover:opacity-40 transition-opacity">🏆</div>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <span className="px-2.5 py-1 bg-gray-800/50 border border-gray-700/50 rounded-full text-xs font-medium text-gray-300">E-Certificate</span>
+          </div>
+        </div>
+
+        {/* Runner Up */}
+        <div className="group relative bg-black/60 rounded-xl p-5 border-2 border-gray-700/50 hover:border-gray-600 transition-all duration-300 hover:-translate-y-1">
+          <div className="flex items-start justify-between mb-3">
+            <div>
+              <div className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-1">{event.slug === 'hackathon' ? '2nd Prize' : 'Runner Up'}</div>
+              <div className="text-4xl font-black text-white mb-1 group-hover:scale-110 transition-transform">
+                {event.slug === 'hackathon' ? '₹10,000' : event.slug === 'project-expo' ? '₹4,000' : '₹1,000'}
+              </div>
+              <div className="text-xs text-gray-500">Cash Prize</div>
+            </div>
+            <div className="text-4xl opacity-20 group-hover:opacity-40 transition-opacity">🎯</div>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <span className="px-2.5 py-1 bg-gray-800/50 border border-gray-700/50 rounded-full text-xs font-medium text-gray-300">E-Certificate</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Everyone Wins Section - Simplified */}
+      <div className="bg-black/60 rounded-xl p-4 border-2 border-gray-700/50">
+        <div className="flex items-center gap-3">
+          <Award className="h-7 w-7 text-gray-400 flex-shrink-0" />
+          <div>
+            <div className="font-bold text-white text-sm mb-0.5">All Participants</div>
+            <div className="text-gray-400 text-sm">
+              {event.slug === 'hackathon' 
+                ? 'Exclusive Goodies + E-Certificates' 
+                : 'E-Certificates'}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
             {/* What You'll Gain - Hidden for esports */}
             {event.slug !== 'esports' && (
               <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 border border-primary/10">
@@ -186,17 +253,12 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                     className="w-full h-12 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow"
                     size="lg"
                   >
-                    <a href={event.registerUrl} target="_blank" rel="noreferrer">
+                    <Link href={event.registerUrl || '#'} target="_blank" rel="noopener noreferrer">
                       Register Now
-                    </a>
+                    </Link>
                   </Button>
                 </div>
-
                 <div className="p-6 space-y-4">
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">Date & Time</p>
-                    <p className="text-base font-semibold">{event.date}</p>
-                  </div>
                   <div>
                     <p className="text-sm font-medium text-muted-foreground mb-1">Duration</p>
                     <p className="text-base font-semibold">{event.Duration}</p>
