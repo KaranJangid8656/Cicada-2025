@@ -34,6 +34,23 @@ export const events: Event[] = [
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025", // replace later with Google Form
   },
+  {
+    slug: "project-expo",
+    title: "Project Expo - The Innovation Show",
+    summary: "Showcase your innovative projects in AI, IoT, Robotics, Cybersecurity, and Green Tech to academic judges",
+    description: `Project Expo – Showcase Your Innovation is an exclusive exhibition event for 7th-semester students to present their most creative and impactful projects to a panel of industry professionals and academic experts. It's a unique opportunity to demonstrate technical skill, problem-solving, and visionary thinking across cutting-edge domains.\n\nParticipants can showcase projects in areas such as:\n• Artificial Intelligence & Machine Learning\n• Internet of Things (IoT)\n• Cybersecurity\n• Robotics and Automation\n• Green Technology & Sustainability\n• Data Science & Analytics\n• Web & Mobile Applications\n\nWhether it's a working prototype, a research-based solution, or a conceptual model, the expo celebrates innovation that addresses real-world challenges. Presenters will engage with judges, receive valuable feedback, and compete for recognition, prizes, and networking opportunities.\n\nHighlights:\n• 100+ projects on display\n• Judged by industry professionals\n• Mentorship and incubation opportunities\n• Prizes and certificates for top innovations\n• Networking with industry experts`,
+    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760969089/Untitled_design_h0ch4k.png",
+    brochureImage: "/project expo.png",
+    clubName: "Innovation Club",
+    clubLogo: "/ait-ai-club-logo.jpg",
+    date: "Nov 5, 2025",
+    Duration: "5–6 hrs",
+    teamSize: "Max of 4 members per team",
+    venue: "Atria Institute of Technology",
+    registrationFee: "₹400 per team",
+    mode: "Offline",
+    registerUrl: "https://konfhub.com/cicada-2025",
+  },
    {
     slug: "intruverse-ctf",
     title: "INTRUVERSE: The Local Breach",
@@ -92,23 +109,7 @@ Challenge Streams:
     mode: "Offline",
     registerUrl: "https://unstop.com/p/agentic-ai-ideathon-atria-institute-of-technology-1576729?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=congratulations-your-listing-for-agentic-ai-ideathon-is-complete",
   },
-  {
-    slug: "project-expo",
-    title: "Project Expo - The Innovation Show",
-    summary: "Showcase your innovative projects in AI, IoT, Robotics, Cybersecurity, and Green Tech before industry and academic judges.",
-    description: `Project Expo – Showcase Your Innovation is a dynamic exhibition event where participants present their most creative and impactful projects to a panel of industry professionals and academic experts. It’s a chance to demonstrate technical skill, problem-solving, and visionary thinking across cutting-edge domains. Participants can showcase projects in areas such as Artificial Intelligence, Robotics, Cybersecurity, and Green Technology. Whether it's a working prototype, a research-based solution, or a conceptual model, the expo celebrates innovation that addresses real-world challenges. Presenters engage with judges, receive feedback, and compete for recognition, prizes, and networking opportunities.\n\nHighlights:\n- 100+ projects on display\n- Judged by industry professionals\n- Mentorship and incubation opportunities\n- Prizes and certificates for top innovations`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760969089/Untitled_design_h0ch4k.png",
-    brochureImage: "/project expo.png",
-    clubName: "Innovation Club",
-    clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Nov 5, 2025",
-    Duration: "5–6 hrs",
-    teamSize: "Max of 4 members per team",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹400 per team",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
+  
   
   
   

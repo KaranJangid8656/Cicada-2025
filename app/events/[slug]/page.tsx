@@ -91,6 +91,15 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
             </div>
 
             {/* About Event */}
+            {event.slug === 'project-expo' && (
+              <div className="border-t border-border pt-8">
+                <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 mb-6 rounded-r">
+                  <p className="text-blue-800 dark:text-blue-100 font-medium">
+                    📌 Eligibility: Open to 7th-semester students only
+                  </p>
+                </div>
+              </div>
+            )}
             <div className="border-t border-border pt-8">
               <h2 className="text-2xl font-bold mb-4">About This Event</h2>
               <div className="prose prose-neutral dark:prose-invert max-w-none">
@@ -242,7 +251,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
 
           {/* Sidebar */}
           <div className="lg:col-span-4">
-            <div className="sticky space-y-4" style={{ top: "calc(6rem - 1cm)" }}>
+            <div className="sticky space-y-4 min-h-[calc(100vh-2rem)]" style={{ top: "2rem" }}>
               {/* Registration Card */}
               <div className="bg-card rounded-2xl border border-border overflow-hidden">
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6 border-b border-border">

@@ -136,7 +136,7 @@ export default function HomePage() {
                     className="w-70 h-35 object-contain"
                   />
                 </div>
-                <div className="sponsor-item flex-shrink-0">
+                <div className="sponsor-item flex-shrink-0 mx-2">
                   <img
                     src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760348280/images__5_-removebg-preview_fjabqd.png"
                     alt="Red Bull"
@@ -148,6 +148,20 @@ export default function HomePage() {
                     src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
                     alt="ScriptVerse"
                     className="w-90 h-45 object-contain"
+                  />
+                </div>
+                <div className="sponsor-item flex-shrink-0 mr-12">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761825817/white_Atria_Foundation_1_1_kajka6.avif"
+                    alt="Atria Foundation"
+                    className="w-78 h-48 object-contain"
+                  />
+                </div>
+                <div className="sponsor-item flex-shrink-0">
+                  <img
+                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761826422/Bangalore-Section-Logo-white-1-01-1-1024x244_c1k3mb.png"
+                    alt="Bangalore Section"
+                    className="w-64 h-35 object-contain brightness-75 hover:brightness-100 transition-all duration-300"
                   />
                 </div>
               </div>
