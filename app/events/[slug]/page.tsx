@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { events } from "@/data/events"
 import { Button } from "@/components/ui/button"
-import { Calendar, Clock, MapPin, Users, Wifi, ExternalLink, Award, Target, Lightbulb } from "lucide-react"
+import { Calendar, Clock, MapPin, Users, Wifi, ExternalLink, Award, Target, Lightbulb, Trophy, Medal, Sparkles, Zap, Star } from "lucide-react"
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog"
 
 export default function EventDetailPage({ params }: { params: { slug: string } }) {
@@ -128,7 +128,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </div>
               <div className="text-xs text-gray-500">Cash Prize</div>
             </div>
-            <div className="text-4xl opacity-20 group-hover:opacity-40 transition-opacity">🏆</div>
+            <Trophy className="h-10 w-10 text-white/90 group-hover:text-white transition-colors mt-1" />
           </div>
           <div className="flex gap-2 flex-wrap">
             <span className="px-2.5 py-1 bg-gray-800/50 border border-gray-700/50 rounded-full text-xs font-medium text-gray-300">E-Certificate</span>
@@ -145,7 +145,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </div>
               <div className="text-xs text-gray-500">Cash Prize</div>
             </div>
-            <div className="text-4xl opacity-20 group-hover:opacity-40 transition-opacity">🎯</div>
+            <Award className="h-10 w-10 text-white/90 group-hover:text-white transition-colors mt-1" />
           </div>
           <div className="flex gap-2 flex-wrap">
             <span className="px-2.5 py-1 bg-gray-800/50 border border-gray-700/50 rounded-full text-xs font-medium text-gray-300">E-Certificate</span>

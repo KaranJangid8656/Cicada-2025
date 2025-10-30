@@ -37,8 +37,14 @@ export const events: Event[] = [
    {
     slug: "intruverse-ctf",
     title: "INTRUVERSE: The Local Breach",
-    summary: "Offline VM-based CTF: hack, exploit, and capture the root flag!",
-    description: `INTRUVERSE is a fully offline, VM-based Capture The Flag (CTF) challenge crafted to test your real-world hacking mindset. Each team will face a self-contained virtual environment filled with hidden vulnerabilities, twisted logic, and chained exploits. Your mission: gain access, move through the system, and uncover the ultimate root flag.\n\nFlag Stages:\n1. User-level flag\n2. Root-level flag\n3. Hidden metadata flag\n\nEach team gets access to a unique target machine on their own system. The CTF includes multiple flag stages, all contributing to a cumulative score.\n\nLearning Outcomes:\n• Practice real-world offensive skills: exploit discovery, chaining, and privilege escalation\n• Work with isolated VMs and safe offline hacking workflows\n• Analyze forensics & hidden metadata to recover flags\n• Improve team coordination under timed, adversarial conditions`,
+    summary: "Test your cybersecurity skills in this thrilling CTF competition - all levels welcome!",
+    description: `Get ready for a thrilling CTF competition that puts your cybersecurity skills to the test! Open to all levels - beginners welcome! Join forces with your team to crack codes, uncover vulnerabilities, and capture the ultimate root flag.
+
+Challenge Streams:
+
+1. Web: Uncover hidden vulnerabilities and injection flaws in logically built web challenges.
+2. VM: Exploit system weaknesses, navigate through intricate network topologies, and outsmart defensive mechanisms in a virtual environment.
+3. File System: Uncover hidden secrets, decrypt mysterious files, and reconstruct fragmented data to reveal the truth in file system forensics challenges.`,
     coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
     brochureImage: "/dub Intruverse.png",
     clubName: "Cybersecurity Club",
