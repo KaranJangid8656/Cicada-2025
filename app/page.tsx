@@ -145,13 +145,6 @@ export default function HomePage() {
                 </div>
                 <div className="sponsor-item flex-shrink-0">
                   <img
-                    src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760801395/Unstop.png_hvcrwe.webp"
-                    alt="Unstop"
-                    className="w-60 h-30 object-contain"
-                  />
-                </div>
-                <div className="sponsor-item flex-shrink-0">
-                  <img
                     src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760803111/WhatsApp_Image_2025-10-16_at_18.17.03_e329bb39-removebg-preview_3_sa6q3n-removebg-preview_fcwkkq.png"
                     alt="ScriptVerse"
                     className="w-90 h-45 object-contain"
