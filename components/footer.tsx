@@ -65,7 +65,7 @@ export function Footer() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="mailto:cicada@ait.edu"
+              href="mailto:karansuthar9565@gmail.com"
               className="hover:text-primary transition-colors"
               aria-label="Email"
             >
