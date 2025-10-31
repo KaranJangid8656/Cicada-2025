@@ -317,9 +317,8 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
               </div>
 
               {/* Contact - Sticky */}
-              <div className="sticky top-32 bg-accent/30 rounded-2xl p-5 text-sm">
-                <p className="font-semibold mb-2">Questions?</p>
-                <p className="text-muted-foreground mb-3">
+              <div className="sticky top-20 bg-accent/30 rounded-2xl p-4 text-sm mt-2">
+                <p className="text-muted-foreground mb-2">
                   Contact the organizing team for any queries.
                 </p>
                 <Dialog>
@@ -336,38 +335,261 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                           Feel free to reach out to any of our organizers for assistance:
                         </p>
                         <div className="space-y-3">
-                          <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                            <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                              <Phone className="h-4 w-4 text-primary" />
-                            </div>
-                            <div>
-                              <p className="font-medium">Karan Suthar</p>
-                              <p className="text-sm text-muted-foreground">+91 8431770172</p>
-                            </div>
-                          </a>
-                          <a href="tel:+918431822515" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                            <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                              <Phone className="h-4 w-4 text-primary" />
-                            </div>
-                            <div>
-                              <p className="font-medium">Priyanka</p>
-                              <p className="text-sm text-muted-foreground">+91 8431822512</p>
-                            </div>
-                          </a>
-                          <a href="tel:+919986837400" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                            <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                              <Phone className="h-4 w-4 text-primary" />
-                            </div>
-                            <div>
-                              <p className="font-medium">Swarnim</p>
-                              <p className="text-sm text-muted-foreground">+91 9986837400</p>
-                            </div>
-                          </a>
+                          {event.slug === 'hackathon' ? (
+                            <>
+                              <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Karan Suthar</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431770172</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919986837400" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Swarnim</p>
+                                  <p className="text-sm text-muted-foreground">+91 9986837400</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918431822512" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Priyanka V C</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431822512</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918073525884" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Sharanu</p>
+                                  <p className="text-sm text-muted-foreground">+91 8073525884</p>
+                                </div>
+                              </a>
+                              <a href="tel:+917483075818" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Sneha</p>
+                                  <p className="text-sm text-muted-foreground">+91 7483075818</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'project-expo' ? (
+                            <>
+                              <a href="tel:+916204705418" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Shruthi Raj</p>
+                                  <p className="text-sm text-muted-foreground">+91 6204705418</p>
+                                </div>
+                              </a>
+                              <a href="tel:+916360497813" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Kashik</p>
+                                  <p className="text-sm text-muted-foreground">+91 6360497813</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918951811235" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Kavan TB</p>
+                                  <p className="text-sm text-muted-foreground">+91 8951811235</p>
+                                </div>
+                              </a>
+                              <a href="tel:+917795264283" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Shrajan</p>
+                                  <p className="text-sm text-muted-foreground">+91 7795264283</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'markethon' ? (
+                            <>
+                              <a href="tel:+919019266949" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Omkar Upadhyay</p>
+                                  <p className="text-sm text-muted-foreground">+91 9019266949</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919110253861" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Parineeta Rana</p>
+                                  <p className="text-sm text-muted-foreground">+91 9110253861</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'proto-race' ? (
+                            <>
+                              <a href="tel:+918431418376" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Tanushri M P</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431418376</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919900350005" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Sherin</p>
+                                  <p className="text-sm text-muted-foreground">+91 9900350005</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'intruverse-ctf' ? (
+                            <>
+                              <a href="tel:+918431822512" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Deva Kumar</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431822512</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919148771379" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Aishwarya</p>
+                                  <p className="text-sm text-muted-foreground">+91 9148771379</p>
+                                </div>
+                              </a>
+                              <a href="tel:+917019126145" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Charu Shree</p>
+                                  <p className="text-sm text-muted-foreground">+91 7019126145</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919611272227" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Prithvi Prabhu</p>
+                                  <p className="text-sm text-muted-foreground">+91 9611272227</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'ipl-auction' ? (
+                            <>
+                              <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Karan Suthar</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431770172</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918618169821" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Shivam Malge</p>
+                                  <p className="text-sm text-muted-foreground">+91 8618169821</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : event.slug === 'agentic-ai' ? (
+                            <>
+                              <a href="tel:+919483798153" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Aman</p>
+                                  <p className="text-sm text-muted-foreground">+91 9483798153</p>
+                                </div>
+                              </a>
+                              <a href="tel:+917483065137" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Mahima</p>
+                                  <p className="text-sm text-muted-foreground">+91 7483065137</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918293017048" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Manotosh</p>
+                                  <p className="text-sm text-muted-foreground">+91 8293017048</p>
+                                </div>
+                              </a>
+                            </>
+                          ) : (
+                            <>
+                              <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Karan Suthar</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431770172</p>
+                                </div>
+                              </a>
+                              <a href="tel:+918431822512" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Priyanka</p>
+                                  <p className="text-sm text-muted-foreground">+91 8431822512</p>
+                                </div>
+                              </a>
+                              <a href="tel:+919986837400" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                  <Phone className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">Swarnim</p>
+                                  <p className="text-sm text-muted-foreground">+91 9986837400</p>
+                                </div>
+                              </a>
+                            </>
+                          )}
                         </div>
                       </div>
                       <div className="pt-2">
                         <p className="text-sm text-muted-foreground mb-2">Or send us an email:</p>
-                        <a href="mailto:karansuthar9565@gmail.com" className="block w-full">
+                        <a href={`mailto:${event.slug === 'markethon' ? 'omkar18u@gmail.com' : 'karansuthar9565@gmail.com'}`} className="block w-full cursor-pointer">
                           <Button variant="outline" className="w-full">
                             <Mail className="h-4 w-4 mr-2" />
                             Email Organizers

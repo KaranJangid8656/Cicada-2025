@@ -14,6 +14,7 @@ export type Event = {
   registerUrl: string
   coverImage?: string
   brochureImage?: string // Added for event brochure
+  contact?: string // Added for event organizer contacts
 }
 
 export const events: Event[] = [
@@ -24,6 +25,7 @@ export const events: Event[] = [
     description: ` <span class="text-white">A 24-Hour Innovation Marathon: Where Creativity Meets Code</span>\n\nGet ready for 24 hours of pure innovation, collaboration, and adrenaline!\nThis marathon brings together brilliant minds from across domains to solve real-world challenges through technology and creativity. Participants will collaborate in teams to prototype, build, and demo an AI-powered application under the guidance of expert mentors. The marathon focuses on pushing boundaries in Vision and Agents — encouraging teams to blend imagination with cutting-edge  tools to craft impactful solutions.\n\n <span class="text-white">Problem Statement Release</span>\n\nAt the start of the hackathon   , problem statements will be revealed, each designed to address pressing real-world issues. Teams must brainstorm, ideate, and select a statement that aligns with their skills and vision. They'll then turn their ideas into working prototypes — all within 24 hours.\n\n <span class="text-white">Event Phases</span>\n\n• Problem Statement Release – Discover and choose your challenge.\n• Ideation & Prototyping – Brainstorm innovative solutions and start building your MVP.\n• Mentorship Checkpoints – Get expert feedback and refine your solution with mentor guidance.\n• Final Presentation & Judging – Pitch your prototype to the judging panel and showcase your innovation.\n\n <span class="text-white">Perks & Amenities</span>\n\nWe've got your energy covered throughout the marathon!\n• 🥞 3 Full Meals: Breakfast, Lunch & Dinner\n• 🍪 Snacks & Refreshments: Available throughout the event\n• 🍕 Midnight Pizza Party: Fuel for your late-night coding sprints\n• ☕ Tea & Coffee: Keep your neurons firing\n• 🎁 Exclusive Swags: Cool goodies for all participants\n• 💬 Mentorship & Networking: Interact with industry experts and tech leaders\n\n <span class="text-white">Final Showdown</span>\n\nShortlisted teams will present their prototypes to a panel of judges comprising industry professionals and academicians. The most innovative, impactful, and technically sound solutions will be crowned the winners — with exciting prizes and recognition awaiting them.`,
     coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1761035597/CICADA_HACKATHON_srpido.png",
     brochureImage: "/hacakthon-poster.png",
+    contact: "Karan Suthar - +91 8431770172\nSwarnim - +91 9986837400\nPriyanka V C - +91 8431822512\nSharanu - +91 8073525884\nSneha - +91 7483075818",
     clubName: "AIT  Club",
     clubLogo: "/ait-ai-club-logo.jpg",
     date: "Nov 7-8, 2025",
@@ -41,6 +43,7 @@ export const events: Event[] = [
     description: `Project Expo is an exclusive platform for 7th-semester students to present their most innovative and impactful projects before a panel of industry professionals and academic experts. It's where creativity meets real-world problem-solving, and visionary ideas come to life through prototypes, research models, and tech demonstrations.\n\n<span class="text-white">Domains You Can Showcase In</span>\n\n🤖 Artificial Intelligence & Machine Learning\n🌐 Internet of Things (IoT)\n🔐 Cybersecurity\n⚙️ Robotics and Automation\n🌱 Green Technology & Sustainability\n📊 Data Science & Analytics\n💻 Web & Mobile Applications\n\nWhether you're showcasing a working prototype, a research-driven concept, or a tech-powered innovation, this is your moment to shine, connect, and inspire.\n\n <span class="text-white">Tracks & Prizes</span>\nTwo separate categories ensure fair recognition for all innovators:\n\n <span class="text-white">Software Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Hardware Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Event Highlights</span>\n• 100+ Projects on Display\n• Judging by Industry Professionals\n• Mentorship & Incubation Opportunities\n• Prizes & Certificates for Top Innovations\n• Networking with Industry Experts`,
     coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760969089/Untitled_design_h0ch4k.png",
     brochureImage: "/project-expo.png",
+    contact: "Shruthi Raj - +91 6204704518\nKashik - +91 6360497813\nKavan TB - +91 8951811235\nShrajan - +91 7795264283",
     clubName: "Innovation Club",
     clubLogo: "/ait-ai-club-logo.jpg",
     date: "Nov 5, 2025",
@@ -86,6 +89,7 @@ Decrypt hidden data, reconstruct files, and analyze digital trails to uncover se
     date: "Nov 6, 2025",
     Duration: "3 - 4 hours",
     teamSize: "3 members per team",
+    contact: "Deva Kumar - +91 8431822512\nAishwarya - +91 9148771379\nCharu Shree - +91 7019126145\nPrithvi Prabhu - +91 9611272227",
     venue: "Atria Institute of Technology",
     registrationFee: "₹150 per team",
     mode: "Offline",
@@ -134,6 +138,7 @@ The real action begins! Compete in a live, dynamic auction to secure your dream 
     date: "Nov 6, 2025",
     Duration: "Endless fun",
     teamSize: "3 members per team",
+    contact: "Karan Suthar - +91 8431770172\nShivam Malge - +91 8618169821",
     venue: "Atria Institute of Technology",
     registrationFee: "₹200 per team",
     mode: "Offline",
@@ -186,6 +191,7 @@ Bring your creativity — custom architectures and open-source frameworks are eq
     venue: "Atria Institute of Technology",
     registrationFee: "₹150 per team",
     mode: "Offline",
+    contact: "Aman - +91 9483798153\nMahima - +91 7483065137\nManotosh - +91 8293017048",
     registerUrl: "https://unstop.com/p/agentic-ai-ideathon-atria-institute-of-technology-1576729?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=congratulations-your-listing-for-agentic-ai-ideathon-is-complete",
   },
   
@@ -260,6 +266,7 @@ Whether it's a poster, short film, or brand pitch, the focus is on originality, 
     brochureImage: "/markethon.png",
     clubName: "E-Cell Atria",
     clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760959250/E-Cell_Atria_Logo_Option_4_1_h0lvih.jpg",
+    contact: "Omkar Upadhyay - +91 9019266949\nParineeta Rana - +91 9110253861",
     date: "Nov 5, 2025",
     Duration: "3 - 4 hours",
     teamSize: "3–5 members",
