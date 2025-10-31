@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { BookOpenText } from "lucide-react"
 import type { Event } from "@/data/events"
 
 export function EventCard({ event }: { event: Event }) {
@@ -62,15 +63,25 @@ export function EventCard({ event }: { event: Event }) {
             Venue: {event.venue}
           </div>
         </div>
-        <div className="flex gap-2 mt-auto">
-          <Button asChild size="sm" className="bg-primary text-primary-foreground hover:opacity-90">
-            <Link href={`/events/${event.slug}`}>View Details</Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <a href={event.registerUrl} target="_blank" rel="noreferrer">
-              Register
-            </a>
-          </Button>
+        <div className="flex items-center justify-between w-full mt-auto">
+          <div className="flex gap-1">
+            <Button asChild size="sm" className="bg-primary text-primary-foreground hover:opacity-90">
+              <Link href={`/events/${event.slug}`}>View Details</Link>
+            </Button>
+            <Button asChild variant="outline" size="sm">
+              <a href={event.registerUrl} target="_blank" rel="noreferrer">
+                Register
+              </a>
+            </Button>
+          </div>
+          {event.brochureImage && (
+            <Button asChild variant="outline" size="sm">
+              <a href={event.brochureImage} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1" title="View Brochure">
+                <BookOpenText className="h-3.5 w-3.5 text-white" strokeWidth={2} />
+                Brochure
+              </a>
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>

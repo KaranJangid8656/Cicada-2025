@@ -259,13 +259,26 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                   <p className="text-4xl font-bold mb-4">{event.registrationFee}</p>
                   <Button
                     asChild
-                    className="w-full h-12 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow"
+                    className="w-full h-12 text-base font-semibold shadow-lg hover:shadow-xl transition-shadow mb-3"
                     size="lg"
                   >
                     <Link href={event.registerUrl || '#'} target="_blank" rel="noopener noreferrer">
                       Register Now
                     </Link>
                   </Button>
+                  {event.brochureImage && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full h-12 text-base font-semibold"
+                      size="lg"
+                    >
+                      <Link href={event.brochureImage} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Event Brochure
+                      </Link>
+                    </Button>
+                  )}
                 </div>
                 <div className="p-6 space-y-4">
                   <div>
