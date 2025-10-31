@@ -1,5 +1,8 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { Separator } from "@/components/ui/separator"
+import { Phone, Mail, Instagram } from "lucide-react"
+import { OrganizerContact } from "@/components/OrganizerContact"
 
 export default function AboutPage() {
   return (
@@ -65,6 +68,30 @@ export default function AboutPage() {
               src="https://res.cloudinary.com/dx9bvma03/image/upload/v1760959250/E-Cell_Atria_Logo_Option_4_1_h0lvih.jpg"
               alt="E-Cell Atria"
               className="w-24 sm:w-32 md:w-36 lg:w-40 h-auto rounded-full object-cover"
+            />
+          </div>
+        </section>
+
+        <Separator className="my-8 opacity-60" />
+
+        <section className="mt-12">
+          <h3 className="text-xl font-semibold mb-6 text-center">Organizers</h3>
+          <div className="flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-8 md:ml-20 lg:ml-32">
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761909347/IMG_20251031_164104_cjnugo.jpg"
+              alt="Organizer portrait"
+              className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover ring-2 ring-white shadow-md md:mt-4 lg:mt-6"
+            />
+            <div className="text-center md:text-left">
+              <p className="text-base md:text-lg font-semibold">Dr. Deepak N R</p>
+              <p className="text-sm text-muted-foreground">Head of Department (ISE)</p>
+              <p className="text-sm text-muted-foreground">Atria Institute of Technology</p>
+              <OrganizerContact />
+            </div>
+            <img
+              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761926582/College_Logo_gjwudh.png"
+              alt="Atria Institute of Technology Logo"
+              className="w-48 sm:w-48 md:w-60 lg:w-72 h-auto object-contain mt-6 sm:mt-8 md:ml-auto md:mr-24 lg:mr-40 md:mt-4 lg:mt-6"
             />
           </div>
         </section>

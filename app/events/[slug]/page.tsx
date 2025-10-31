@@ -251,7 +251,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
 
           {/* Sidebar */}
           <div className="lg:col-span-4">
-            <div className="sticky space-y-4 min-h-[calc(100vh-2rem)]" style={{ top: "2rem" }}>
+            <div className="sticky space-y-4 min-h-[calc(50vh-2rem)]" style={{ top: "2rem" }}>
               {/* Registration Card */}
               <div className="bg-card rounded-2xl border border-border overflow-hidden">
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6 border-b border-border">
