@@ -77,16 +77,18 @@ export default function AboutPage() {
         <section className="mt-12">
           <h3 className="text-xl font-semibold mb-6 text-center">Organizers</h3>
           <div className="flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-8 md:ml-20 lg:ml-32">
-            <img
-              src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761909347/IMG_20251031_164104_cjnugo.jpg"
-              alt="Organizer portrait"
-              className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover ring-2 ring-white shadow-md md:mt-4 lg:mt-6"
-            />
-            <div className="text-center md:text-left">
-              <p className="text-base md:text-lg font-semibold">Dr. Deepak N R</p>
-              <p className="text-sm text-muted-foreground">Head of Department (ISE)</p>
-              <p className="text-sm text-muted-foreground">Atria Institute of Technology</p>
-              <OrganizerContact />
+            <div className="flex w-full items-center gap-4 ml-24 sm:ml-28 md:ml-0">
+              <img
+                src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761909347/IMG_20251031_164104_cjnugo.jpg"
+                alt="Organizer portrait"
+                className="w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover ring-2 ring-white shadow-md md:mt-4 lg:mt-6"
+              />
+              <div className="text-center md:text-left">
+                <p className="text-base md:text-lg font-semibold">Dr. Deepak N R</p>
+                <p className="text-sm text-muted-foreground">Head of Department (ISE)</p>
+                <p className="text-sm text-muted-foreground">Atria Institute of Technology</p>
+                <OrganizerContact />
+              </div>
             </div>
             <img
               src="https://res.cloudinary.com/dx9bvma03/image/upload/v1761926582/College_Logo_gjwudh.png"
