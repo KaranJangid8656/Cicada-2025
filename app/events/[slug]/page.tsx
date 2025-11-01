@@ -337,16 +337,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                         <div className="space-y-3">
                           {event.slug === 'hackathon' ? (
                             <>
-                              <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                  <Phone className="h-4 w-4 text-primary" />
-                                </div>
-                                <div>
-                                  <p className="font-medium">Karan Suthar</p>
-                                  <p className="text-sm text-muted-foreground">+91 8431770172</p>
-                                </div>
-                              </a>
-                              <a href="tel:+919986837400" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+<a href="tel:+919986837400" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
                                 <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                                   <Phone className="h-4 w-4 text-primary" />
                                 </div>
@@ -556,16 +547,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                             </>
                           ) : (
                             <>
-                              <a href="tel:+918431770172" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                  <Phone className="h-4 w-4 text-primary" />
-                                </div>
-                                <div>
-                                  <p className="font-medium">Karan Suthar</p>
-                                  <p className="text-sm text-muted-foreground">+91 8431770172</p>
-                                </div>
-                              </a>
-                              <a href="tel:+918431822512" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
+<a href="tel:+918431822512" className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors">
                                 <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                                   <Phone className="h-4 w-4 text-primary" />
                                 </div>
