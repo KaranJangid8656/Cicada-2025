@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Hero } from "@/components/hero"
 import { events } from "@/data/events"
 import { EventCard } from "@/components/event-card"
+import EventCarousel from "@/components/event-carousel"
 import { useEffect, useRef } from 'react'
 
 export default function HomePage() {
@@ -120,9 +121,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      
+      <section className="mx-auto max-w-7xl px-4 md:px-6 mt-24 mb-24">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-12 text-center">Event Gallery</h2>
+        <div className="relative mb-16">
+          <EventCarousel />
+        </div>
+      </section>
 
-      <section className="mx-auto max-w-7xl px-4 md:px-6 mt-16">
+      <section className="mx-auto max-w-7xl px-4 md:px-6 mb-24">
         <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Our Proud Partners</h2>
         <div className="relative overflow-hidden py-8">
           <div className="relative overflow-hidden w-full">

@@ -14,6 +14,7 @@ export function ParticleNetwork({
   className?: string
 }) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  
   const [paused, setPaused] = useState(false)
 
   useEffect(() => {
