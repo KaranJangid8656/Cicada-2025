@@ -263,7 +263,7 @@ Whether it's a poster, short film, or brand pitch, the focus is on originality, 
 • 🤝 Collaborate and compete with creative minds across disciplines
 • 🏆 Win exciting prizes, certificates, and the title of "Markethon Champions 2025"`,
     coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760971845/Orange_and_Cream_Illustration_Marketing_Plan_Presentation_bm5kvg.jpg",
-    brochureImage: "/markethon.png",
+    brochureImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1762061913/markethon_njzsah.jpg",
     clubName: "E-Cell Atria",
     clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760959250/E-Cell_Atria_Logo_Option_4_1_h0lvih.jpg",
     contact: "Omkar Upadhyay - +91 9019266949\nParineeta Rana - +91 9110253861",
