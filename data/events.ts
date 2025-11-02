@@ -278,31 +278,4 @@ Whether it's a poster, short film, or brand pitch, the focus is on originality, 
   
   
     
-  {
-    slug: "esports",
-    title: "Esports Tournament: Free Fire and BGMI",
-    summary: "Compete in Free Fire and BGMI tournaments in teams of 4. Showcase your skills and win prizes!",
-    description: `ESPORTS TOURNAMENT 2025
-
-        Gear up for the ultimate Esports showdown at CICADA 2025! Whether you're a clutch master, a sniper pro, or the ultimate strategist, this is your chance to prove your gaming skills on the big stage.
-
-   Form a squad of 4 players and compete in two of the most iconic battle royale titles — Free Fire and PUBG Mobile. Each match will test your team coordination, reaction time, and game sense as you fight for survival and domination. With thrilling matches, intense rivalries, and high stakes, CICADA 2025's Esports tournament is where legends are made. Stand out with your strategies, communicate flawlessly with your teammates, and showcase your reflexes to claim victory.
-
-    Top-performing teams will not only earn bragging rights but also grab exciting prizes and exclusive recognition at the event. Spectators can enjoy live streams, match highlights, and real-time leaderboards to keep the adrenaline pumping.
-
-   Don't miss this opportunity to experience the rush of competitive gaming, meet fellow esports enthusiasts, and make your mark on CICADA 2025. Sign up now, assemble your squad, and prepare to dominate the battlefield!
-
-
-`,
-    coverImage: "/pubg.jpg",
-    clubName: "Esports Club",
-    clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Oct 31 , 2025",
-    Duration: "2 days",
-    teamSize: "4 members per team",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹200 per pass",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
 ]

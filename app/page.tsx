@@ -373,7 +373,7 @@ export default function HomePage() {
               className="w-full text-left p-6 cursor-pointer"
               onClick={() => {
                 // Close all FAQ items first
-                const allFaqItems = ['faq-1', 'faq-2', 'faq-3', 'faq-4', 'faq-5'];
+                const allFaqItems = ['faq-1', 'faq-2', 'faq-3', 'faq-4', 'faq-5', 'faq-6'];
                 allFaqItems.forEach(id => {
                   const element = document.getElementById(id);
                   if (element && element.id !== 'faq-5') {
@@ -394,8 +394,42 @@ export default function HomePage() {
             <div id="faq-5" className="hidden">
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  CICADA 2025 takes place at Atria Institute of Technology in Hebbal, Bengaluru from 5th Nov to 7th Nov
+                  CICADA 2025 takes place at Atria Institute of Technology in Hebbal, Bengaluru from 5th Nov to 7th Nov.
                   Stay tuned to our website and social media for the latest updates on scheduling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Item 6 - Accommodation */}
+          <div className="border border-border rounded-lg bg-card overflow-hidden">
+            <button
+              className="w-full text-left p-6 cursor-pointer"
+              onClick={() => {
+                // Close all FAQ items first
+                const allFaqItems = ['faq-1', 'faq-2', 'faq-3', 'faq-4', 'faq-5', 'faq-6'];
+                allFaqItems.forEach(id => {
+                  const element = document.getElementById(id);
+                  if (element && element.id !== 'faq-6') {
+                    element.classList.add('hidden');
+                  }
+                });
+
+                // Toggle the clicked FAQ item
+                const answer = document.getElementById('faq-6');
+                answer?.classList.toggle('hidden');
+              }}
+            >
+              <div className="flex justify-between items-center">
+                <h3 className="text-lg font-semibold">Is accommodation provided for participants?</h3>
+                <span className="text-foreground text-xl font-bold cursor-pointer">+</span>
+              </div>
+            </button>
+            <div id="faq-6" className="hidden">
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  No, accommodation will not be provided for participants. We recommend arranging your own accommodation in advance. 
+                  The event venue is well-connected to various parts of Bengaluru via public transport and cabs.
                 </p>
               </div>
             </div>
