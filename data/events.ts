@@ -242,39 +242,6 @@ The first team to finish the build and execute the project wins the race!
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
-  {
-    slug: "markethon",
-    title: "Markethon - The Ad Making Marathon",
-    summary: "Put your marketing minds to the test with Markethon 2025 — the ultimate ad-making challenge!",
-    description: `Welcome to Markethon, the ultimate Ad Making Marathon that puts your creativity, storytelling, and marketing instincts to the test!
-This challenge simulates the real-world rush of launching a marketing campaign, where teams must ideate, create, and pitch an ad — all within a limited time.
-Participants will receive a theme or brief — it could be a product launch, brand challenge, or social cause — and must craft a compelling advertisement that grabs attention and drives impact.
-Whether it's a poster, short film, or brand pitch, the focus is on originality, clarity, and persuasion.
-
-<span class="text-white">What We're Looking For</span>
-• 💡 Creativity & Originality – Unique ideas that break the norm
-• 🎯 Marketing Strategy – Strong messaging and clear positioning
-• 🎭 Storytelling & Presentation – Visual appeal and emotional impact
-• 🎬 Execution Quality – Overall direction, editing, and delivery
-
-<span class="text-white">Why You Should Join</span>
-• 🚀 Experience the real rush of marketing under pressure
-• 🎨 Showcase your storytelling and branding skills
-• 🤝 Collaborate and compete with creative minds across disciplines
-• 🏆 Win exciting prizes, certificates, and the title of "Markethon Champions 2025"`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760971845/Orange_and_Cream_Illustration_Marketing_Plan_Presentation_bm5kvg.jpg",
-    brochureImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1762061913/markethon_njzsah.jpg",
-    clubName: "E-Cell Atria",
-    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760959250/E-Cell_Atria_Logo_Option_4_1_h0lvih.jpg",
-    contact: "Omkar Upadhyay - +91 9019266949\nParineeta Rana - +91 9110253861",
-    date: "Nov 5, 2025",
-    Duration: "3 - 4 hours",
-    teamSize: "3–5 members",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹250 per team",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
   
   
     
