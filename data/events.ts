@@ -246,3 +246,39 @@ The first team to finish the build and execute the project wins the race!
   
     
 ]
+
+export interface ProjectExpoWinner {
+  rank: number
+  teamName: string
+  college: string
+  participants?: string[]
+}
+
+export const projectExpoWinners: ProjectExpoWinner[] = [
+  {
+    rank: 1,
+    teamName: "Team InnovateX",
+    college: "HKBK College of Engineering",
+    participants: [
+      "Ankita K",
+      "Chandana L",
+      "Chethan N",
+      "Likitha M"
+    ]
+  },
+  {
+    rank: 2,
+    teamName: "Tech Pioneers",
+    college: "Atria Institute of Technology"
+  },
+  {
+    rank: 3,
+    teamName: "CodeCrafters",
+    college: "Atria Institute of Technology"
+  },
+  {
+    rank: 4,
+    teamName: "ByteMasters",
+    college: "Atria Institute of Technology"
+  }
+]

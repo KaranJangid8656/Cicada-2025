@@ -2,6 +2,8 @@
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button"
+import { Trophy, Medal } from "lucide-react"
 import { Hero } from "@/components/hero"
 import { events } from "@/data/events"
 import { EventCard } from "@/components/event-card"
@@ -118,6 +120,158 @@ export default function HomePage() {
           {events.slice(0, 3).map((e) => (
             <EventCard key={e.slug} event={e} />
           ))}
+        </div>
+      </section>
+
+      <section id="project-expo-standings" className="mx-auto max-w-4xl px-4 md:px-6 mt-24">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            PROJECT EXPO STANDINGS
+          </h2>
+          <p className="mt-3 text-lg text-muted-foreground font-medium">Celebrating Excellence in Innovation</p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Hardware Category */}
+          <div className="space-y-4">
+            <div className="text-center mb-4">
+              <h3 className="text-xl font-semibold text-foreground flex items-center justify-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Hardware
+              </h3>
+            </div>
+            
+            {[1, 2].map((rank) => {
+              const winner = {
+                rank,
+                teamName: rank === 1 ? 'Team Titans' : 'Cambridge Scavengers',
+                college: rank === 1 ? 'HKBK College of Engineering' : 'Cambridge Institute of Technology',
+                participants: rank === 1 ? 
+                  ['Ankita K', 'Chandana L', 'Chethan N', 'Likitha M'] : 
+                  ['Dikshitha Ramesh', 'G Akshaya', 'A Mohith', 'Nagarjun Reddy'],
+                colors: {
+                  bg: 'bg-muted/50 dark:bg-muted/20',
+                  border: 'border-muted-foreground/10 dark:border-muted-foreground/20',
+                  text: 'text-foreground/90',
+                  badge: 'bg-muted-foreground/10 text-foreground/80 border border-muted-foreground/10',
+                  shadow: 'shadow-foreground/5',
+                  medalColor: rank === 1 ? 'text-amber-500 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'
+                },
+                medal: rank === 1 ? <Trophy className="w-12 h-12 text-white" /> : <Medal className="w-12 h-12 text-white" />,
+                position: rank === 1 ? '1st Place' : '2nd Place'
+              };
+              
+              return (
+                <div 
+                  key={`hardware-${rank}`}
+                  className={`p-5 rounded-lg border ${winner.colors.bg} ${winner.colors.border} 
+                  transition-all duration-300 hover:shadow-md ${winner.colors.shadow} hover:border-primary/40 min-h-[280px]`}
+                >
+                  <div className="flex items-center justify-between gap-4 mb-3">
+                    <h3 className="text-lg font-semibold text-foreground">{winner.position}</h3>
+                    <span className={`text-3xl ${winner.colors.medalColor} transition-transform duration-300 group-hover:scale-110`}>
+                      {winner.medal}
+                    </span>
+                  </div>
+                  <div className="mb-2">
+                    <h4 className="font-medium text-green-500 hover:text-green-400 transition-colors">{winner.teamName}</h4>
+                    <p className="text-sm text-muted-foreground flex items-center">
+                      <svg className="w-3.5 h-3.5 mr-1.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      {winner.college}
+                    </p>
+                  </div>
+                  {winner.participants && winner.participants.length > 0 && (
+                    <div className="mt-3 pt-3 border-t border-border/50">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Team Members:</p>
+                      <ul className="text-xs text-muted-foreground space-y-1">
+                        {winner.participants.map((participant, idx) => (
+                          <li key={idx} className="flex items-center">
+                            <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/30 mr-2"></span>
+                            {participant}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Software Category */}
+          <div className="space-y-4">
+            <div className="text-center mb-4">
+              <h3 className="text-xl font-semibold text-foreground flex items-center justify-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Software
+              </h3>
+            </div>
+            
+            {[1, 2].map((rank) => {
+              const winner = {
+                rank,
+                teamName: rank === 1 ? 'Security Squads' : 'Team 5 CSDS',
+                college: rank === 1 ? 'GEC Ramangara' : 'Atria Institute of Technology',
+                participants: rank === 1 ? 
+                  ['Nagashree M', 'Mounika S C', 'Manoj N', 'Mahesh'] : 
+                  ['Sumanth', 'Siddharth', 'Umesh'],
+                colors: {
+                  bg: 'bg-muted/50 dark:bg-muted/20',
+                  border: 'border-muted-foreground/10 dark:border-muted-foreground/20',
+                  text: 'text-foreground/90',
+                  badge: 'bg-muted-foreground/10 text-foreground/80 border border-muted-foreground/10',
+                  shadow: 'shadow-foreground/5',
+                  medalColor: rank === 1 ? 'text-amber-500 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'
+                },
+                medal: rank === 1 ? <Trophy className="w-12 h-12 text-white" /> : <Medal className="w-12 h-12 text-white" />,
+                position: rank === 1 ? '1st Place' : '2nd Place'
+              };
+              
+              return (
+                <div 
+                  key={`software-${rank}`}
+                  className={`p-5 rounded-lg border ${winner.colors.bg} ${winner.colors.border} 
+                  transition-all duration-300 hover:shadow-md ${winner.colors.shadow} hover:border-primary/40 min-h-[280px]`}
+                >
+                  <div className="flex items-center justify-between gap-4 mb-3">
+                    <h3 className="text-lg font-semibold text-foreground">{winner.position}</h3>
+                    <span className={`text-3xl ${winner.colors.medalColor} transition-transform duration-300 group-hover:scale-110`}>
+                      {winner.medal}
+                    </span>
+                  </div>
+                  <div className="mb-2">
+                    <h4 className="font-medium text-green-500 hover:text-green-400 transition-colors">{winner.teamName}</h4>
+                    <p className="text-sm text-muted-foreground flex items-center">
+                      <svg className="w-3.5 h-3.5 mr-1.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      {winner.college}
+                    </p>
+                  </div>
+                  {winner.participants && winner.participants.length > 0 && (
+                    <div className="mt-3 pt-3 border-t border-border/50">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Team Members:</p>
+                      <ul className="text-xs text-muted-foreground space-y-1">
+                        {winner.participants.map((participant, idx) => (
+                          <li key={idx} className="flex items-center">
+                            <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/30 mr-2"></span>
+                            {participant}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
