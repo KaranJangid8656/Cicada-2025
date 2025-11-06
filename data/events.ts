@@ -37,65 +37,6 @@ export const events: Event[] = [
     registerUrl: "https://konfhub.com/cicada-2025", // replace later with Google Form
   },
   {
-    slug: "project-expo",
-    title: "Project Expo - The Innovation Show",
-    summary: "Exclusive platform for 7th-semester students to present innovative projects to industry professionals and academic experts",
-    description: `Project Expo is an exclusive platform for 7th-semester students to present their most innovative and impactful projects before a panel of industry professionals and academic experts. It's where creativity meets real-world problem-solving, and visionary ideas come to life through prototypes, research models, and tech demonstrations.\n\n<span class="text-white">Domains You Can Showcase In</span>\n\n🤖 Artificial Intelligence & Machine Learning\n🌐 Internet of Things (IoT)\n🔐 Cybersecurity\n⚙️ Robotics and Automation\n🌱 Green Technology & Sustainability\n📊 Data Science & Analytics\n💻 Web & Mobile Applications\n\nWhether you're showcasing a working prototype, a research-driven concept, or a tech-powered innovation, this is your moment to shine, connect, and inspire.\n\n <span class="text-white">Tracks & Prizes</span>\nTwo separate categories ensure fair recognition for all innovators:\n\n <span class="text-white">Software Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Hardware Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Event Highlights</span>\n• 100+ Projects on Display\n• Judging by Industry Professionals\n• Mentorship & Incubation Opportunities\n• Prizes & Certificates for Top Innovations\n• Networking with Industry Experts`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760969089/Untitled_design_h0ch4k.png",
-    brochureImage: "/project-expo.png",
-    contact: "Shruthi Raj - +91 6204704518\nKashik - +91 6360497813\nKavan TB - +91 8951811235\nShrajan - +91 7795264283",
-    clubName: "Innovation Club",
-    clubLogo: "/ait-ai-club-logo.jpg",
-    date: "Nov 5, 2025",
-    Duration: "5–6 hrs",
-    teamSize: "Max of 4 members per team",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹400 per team",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
-   {
-    slug: "intruverse-ctf",
-    title: "INTRUVERSE: The Local Breach",
-    summary: "A high-octane CTF competition testing your hacking, problem-solving, and analytical skills across multiple challenge streams",
-    description: `Get ready for an intense cybersecurity showdown that pushes your hacking, problem-solving, and analytical skills to the limit!
-Whether you're a beginner stepping into ethical hacking or an experienced player hungry for new challenges, this CTF competition is your chance to think like an attacker, act like a defender, and capture the flag!
-Work in teams, collaborate under pressure, and compete to crack codes, uncover vulnerabilities, and claim the ultimate root flag.
-
-⚔️ <span class="text-white">Challenge Streams</span>
-
-1. 🌐 <span class="text-white">Web</span>
-Dive into the digital underworld of the internet!
-Explore logically crafted web challenges filled with hidden vulnerabilities, injection flaws, and misconfigurations waiting to be exploited.
-
-2. 💻 <span class="text-white">VM (Virtual Machine)</span>
-Step inside a simulated environment designed to mimic real-world system architectures.
-Exploit vulnerabilities, navigate complex network topologies, and outsmart defense mechanisms to gain system-level access.
-
-3. 🗂️ <span class="text-white">File System</span>
-Put your forensic hat on!
-Decrypt hidden data, reconstruct files, and analyze digital trails to uncover secrets buried deep within file systems.
-
-  <span class="text-white">Why You Should Join</span>
-• Open to beginners and experts alike
-• Hands-on experience in ethical hacking & digital forensics
-• Compete in a real-time cyber battle against top teams
-• Learn, collaborate, and network with cybersecurity enthusiasts
-• Exciting prizes, certificates, and bragging rights await the winners`,
-    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
-    brochureImage: "/intruverse.png",
-    clubName: "Cybersecurity Club",
-    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
-    date: "Nov 6, 2025",
-    Duration: "3 - 4 hours",
-    teamSize: "3 members per team",
-    contact: "Deva Kumar - +91 8431822512\nAishwarya - +91 9148771379\nCharu Shree - +91 7019126145\nPrithvi Prabhu - +91 9611272227",
-    venue: "Atria Institute of Technology",
-    registrationFee: "₹150 per team",
-    mode: "Offline",
-    registerUrl: "https://konfhub.com/cicada-2025",
-  },
-  {
     slug: "ipl-auction",
     title: "IPL Auction: Cricket Strategy Challenge",
     summary: "Step into the shoes of an IPL team owner in this thrilling Auction Challenge where strategy meets cricketing genius!",
@@ -144,6 +85,48 @@ The real action begins! Compete in a live, dynamic auction to secure your dream 
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
+   {
+    slug: "intruverse-ctf",
+    title: "INTRUVERSE: The Local Breach",
+    summary: "A high-octane CTF competition testing your hacking, problem-solving, and analytical skills across multiple challenge streams",
+    description: `Get ready for an intense cybersecurity showdown that pushes your hacking, problem-solving, and analytical skills to the limit!
+Whether you're a beginner stepping into ethical hacking or an experienced player hungry for new challenges, this CTF competition is your chance to think like an attacker, act like a defender, and capture the flag!
+Work in teams, collaborate under pressure, and compete to crack codes, uncover vulnerabilities, and claim the ultimate root flag.
+
+⚔️ <span class="text-white">Challenge Streams</span>
+
+1. 🌐 <span class="text-white">Web</span>
+Dive into the digital underworld of the internet!
+Explore logically crafted web challenges filled with hidden vulnerabilities, injection flaws, and misconfigurations waiting to be exploited.
+
+2. 💻 <span class="text-white">VM (Virtual Machine)</span>
+Step inside a simulated environment designed to mimic real-world system architectures.
+Exploit vulnerabilities, navigate complex network topologies, and outsmart defense mechanisms to gain system-level access.
+
+3. 🗂️ <span class="text-white">File System</span>
+Put your forensic hat on!
+Decrypt hidden data, reconstruct files, and analyze digital trails to uncover secrets buried deep within file systems.
+
+  <span class="text-white">Why You Should Join</span>
+• Open to beginners and experts alike
+• Hands-on experience in ethical hacking & digital forensics
+• Compete in a real-time cyber battle against top teams
+• Learn, collaborate, and network with cybersecurity enthusiasts
+• Exciting prizes, certificates, and bragging rights await the winners`,
+    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760965058/intrucv_lqqi1l.jpg",
+    brochureImage: "/intruverse.png",
+    clubName: "Cybersecurity Club",
+    clubLogo: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760269199/CyberSec-AIT_jtlgdt.png",
+    date: "Nov 6, 2025",
+    Duration: "3 - 4 hours",
+    teamSize: "3 members per team",
+    contact: "Deva Kumar - +91 8431822512\nAishwarya - +91 9148771379\nCharu Shree - +91 7019126145\nPrithvi Prabhu - +91 9611272227",
+    venue: "Atria Institute of Technology",
+    registrationFee: "₹150 per team",
+    mode: "Offline",
+    registerUrl: "https://konfhub.com/cicada-2025",
+  },
+  
  
   {
     slug: "agentic-ai",
@@ -239,6 +222,24 @@ The first team to finish the build and execute the project wins the race!
     teamSize: "Team of 4",
     venue: "Atria Institute of Technology",
     registrationFee: "₹150 per team",
+    mode: "Offline",
+    registerUrl: "https://konfhub.com/cicada-2025",
+  },
+  {
+    slug: "project-expo",
+    title: "Project Expo - The Innovation Show",
+    summary: "Exclusive platform for 7th-semester students to present innovative projects to industry professionals and academic experts",
+    description: `Project Expo is an exclusive platform for 7th-semester students to present their most innovative and impactful projects before a panel of industry professionals and academic experts. It's where creativity meets real-world problem-solving, and visionary ideas come to life through prototypes, research models, and tech demonstrations.\n\n<span class="text-white">Domains You Can Showcase In</span>\n\n🤖 Artificial Intelligence & Machine Learning\n🌐 Internet of Things (IoT)\n🔐 Cybersecurity\n⚙️ Robotics and Automation\n🌱 Green Technology & Sustainability\n📊 Data Science & Analytics\n💻 Web & Mobile Applications\n\nWhether you're showcasing a working prototype, a research-driven concept, or a tech-powered innovation, this is your moment to shine, connect, and inspire.\n\n <span class="text-white">Tracks & Prizes</span>\nTwo separate categories ensure fair recognition for all innovators:\n\n <span class="text-white">Software Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Hardware Track</span>\n🥇 Winners: ₹8,000 + E-Certificate\n🥈 Runners-up: ₹4,000 + E-Certificate\n\n <span class="text-white">Event Highlights</span>\n• 100+ Projects on Display\n• Judging by Industry Professionals\n• Mentorship & Incubation Opportunities\n• Prizes & Certificates for Top Innovations\n• Networking with Industry Experts`,
+    coverImage: "https://res.cloudinary.com/dx9bvma03/image/upload/v1760969089/Untitled_design_h0ch4k.png",
+    brochureImage: "/project-expo.png",
+    contact: "Shruthi Raj - +91 6204704518\nKashik - +91 6360497813\nKavan TB - +91 8951811235\nShrajan - +91 7795264283",
+    clubName: "Innovation Club",
+    clubLogo: "/ait-ai-club-logo.jpg",
+    date: "Nov 5, 2025",
+    Duration: "5–6 hrs",
+    teamSize: "Max of 4 members per team",
+    venue: "Atria Institute of Technology",
+    registrationFee: "₹400 per team",
     mode: "Offline",
     registerUrl: "https://konfhub.com/cicada-2025",
   },
