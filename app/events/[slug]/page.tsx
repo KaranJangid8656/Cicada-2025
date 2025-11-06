@@ -91,6 +91,18 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
             </div>
 
             {/* About Event */}
+            {event.slug === 'hackathon' && (
+              <div className="border-t border-border pt-8">
+                <div className="bg-white dark:bg-gray-900 border-l-4 border-orange-500 p-4 mb-6 rounded-r shadow">
+                  <p className="text-gray-800 dark:text-gray-100 font-medium flex items-center gap-2">
+                    <span className="text-orange-500">📌</span> On-Spot Registrations Only
+                  </p>
+                  <p className="text-red-500 text-sm mt-1 ml-6 font-medium">
+                    Online registrations have been closed
+                  </p>
+                </div>
+              </div>
+            )}
             {event.slug === 'project-expo' && (
               <div className="border-t border-border pt-8">
                 <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 mb-6 rounded-r">

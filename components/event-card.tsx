@@ -20,9 +20,14 @@ export function EventCard({ event }: { event: Event }) {
                 />
                 <div>
                   {event.slug === "hackathon" && (
-                    <span className="text-xs font-medium text-green-500 border border-green-500/30 rounded-full px-3 py-1 bg-green-500/10">
-                      Flagship Event
-                    </span>
+                    <>
+                      <span className="text-xs font-medium text-green-500 border border-green-500/30 rounded-full px-3 py-1 bg-green-500/10 mr-2">
+                        Flagship Event
+                      </span>
+                      <span className="text-xs font-medium text-blue-500 border border-blue-500/30 rounded-full px-3 py-1 bg-blue-500/10">
+                        On-Spot Only
+                      </span>
+                    </>
                   )}
                   <div className="flex items-center gap-2 mt-0.5">
                     <span className="text-xs text-white font-medium">
